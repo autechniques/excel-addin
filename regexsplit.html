@@ -13,13 +13,13 @@
     <p><div>Chia nhỏ một chuỗi văn bản (hoặc giá trị) dựa trên biểu thức chính quy (Regular Expression). </div></p>
     
     <img src="gif/regexsplit.gif">
-    <p>VD1: Tách chuỗi dựa vào dấu phân tách không phải ký tự từ.</p>
+    <blockquote>
+        <p>&nbsp;VD1: Tách chuỗi dựa vào dấu phân tách không phải ký tự từ.</p>
+    </blockquote>
     
    <code class="language-xls"><span class="token operator">=</span><a class="token function" href="/functions/trim-function">TRIM</a><span class="token punctuation">(</span><a class="token function" href="/functions/mid-function">MID</a><span class="token punctuation">(</span><a class="token function" href="/functions/substitute-function">SUBSTITUTE</a><span class="token punctuation">(</span><span class="token cell selector">$B5</span><span class="token punctuation">,</span><span class="token string">"|"</span><span class="token punctuation">,</span><a class="token function" href="/functions/rept-function">REPT</a><span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">,</span><a class="token function" href="/functions/len-function">LEN</a><span class="token punctuation">(</span><span class="token cell selector">$B5</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token cell selector">C$4</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">*</span><a class="token function" href="/functions/len-function">LEN</a><span class="token punctuation">(</span><span class="token cell selector">$B5</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span><a class="token function" href="/functions/len-function">LEN</a><span class="token punctuation">(</span><span class="token cell selector">$B5</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code>
 
-   <blockquote>
-    <p>&nbsp;</p>
-</blockquote>
+ 
 
     <p><strong>Related function</strong></p>
     
