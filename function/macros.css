@@ -26,6 +26,8 @@ p {
 	padding: 0;
 }
 strong {
+	font-size: 20px;
+	color: rgb(30, 30, 30);
 	font-weight: bold;
 }
 
