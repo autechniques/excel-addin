@@ -15,13 +15,19 @@
 
 <body>
    <iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
-   
-   
+   <audio id="player" autoplay loop>
+      <source src="goodbye.mp3" type="audio/mp3">
+   </audio>
+   <script type="text/javascript">
+      window.onload=function(){
+        document.getElementById("player").play();
+      };
+   </script>
    <script type="text/javascript">
       document.addEventListener('DOMContentLoaded', function() {
          var audioTag = document.createElement("AUDIO");
 
-         audioTag.setAttribute("src","goodbye.mp3");
+         audioTag.setAttribute("src","hello.mp3");
 
          document.body.appendChild(audioTag);
       }, false);
