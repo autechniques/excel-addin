@@ -91,13 +91,13 @@
   .cc--var-color-link-alt-focus:after {
     background-color: #793311;
   }
-  . cc--var-color-link-alt-focus .cc__variable:after {
+  .cc--var-color-link-alt-focus .cc__variable:after {
     content: "#793311";
   }
   .cc--var-color-link-alt-hover:after {
     background-color: #793311;
   }
-  . cc--var-color-link-alt-hover .cc__variable:after {
+  .cc--var-color-link-alt-hover .cc__variable:after {
     content: "#793311";
   }
   .cc--var-color-link-alt-visited:after {
