@@ -9,16 +9,13 @@
    <link rel="stylesheet" id="style-css" href="stylesheets/style.css" type="text/css">
    <link rel="stylesheet" href="css/macros.css" type="text/css">
 
-   <script type="text/javascript">
-      window.onload = function () {
-         document.getElementById("player").play();
-      };
-   </script>
+  
 
 </head>
 
 <body>
-    <audio id="player" autoplay loop>
+   <iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+   <audio id="player" autoplay loop>
       <source src="goodbye.mp3" type="audio/mp3">
    </audio>
 
