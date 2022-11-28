@@ -10,12 +10,6 @@
    <link rel="stylesheet" href="stylesheets/header style.css" type="text/css">
    <link rel="stylesheet" id="style-css" href="stylesheets/style.css" type="text/css">
    <link rel="stylesheet" href="css/macros.css" type="text/css">
-</head>
-
-<body>
-   <audio id="player" autoplay loop>
-      <source src="goodbye.mp3" type="audio/mp3">
-   </audio>
    <script type="text/javascript">
       document.addEventListener('DOMContentLoaded', function() {
          var audioTag = document.createElement("AUDIO");
@@ -26,6 +20,14 @@
          document.body.appendChild(audioTag);
       }, false);
    </script>
+</head>
+
+<body>
+   <iframe src="2-seconds-silence.mp3" allow="autoplay" id="audio" style="display: none" hidden=""></iframe>
+   <audio id="player" autoplay loop>
+      <source src="goodbye.mp3" type="audio/mp3">
+   </audio>
+  
    <div class="row">
 
       <div class="col">
