@@ -16,16 +16,16 @@
 </head>
 
 <body>
-   
+   <audio id="player"  loop>
+      <source src="goodbye.mp3" type="audio/mp3">
+   </audio>
    <script type="text/javascript">
-      document.addEventListener('DOMContentLoaded', function() {
-         var audioTag = document.createElement("AUDIO");
-
-         audioTag.setAttribute("src","goodbye.mp3");
-
-         document.body.appendChild(audioTag);
-      }, false);
-   </script>
+      window.onload=function(){
+         var x = document.getElementById("player");
+         x.autoplay = true;
+         x.load();
+      };
+</script>
 
    <div class="row">
 
