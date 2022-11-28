@@ -1736,7 +1736,7 @@
   }
   .mt-4,
   .my-4 {
-    margin-top: 1.5rem !important;
+    ;
   }
   .mr-4,
   .mx-4 {
@@ -1744,7 +1744,7 @@
   }
   .mb-4,
   .my-4 {
-    margin-bottom: 1.5rem !important;
+    ;
   }
   .ml-4,
   .mx-4 {
@@ -2079,7 +2079,7 @@
     }
     .mt-sm-4,
     .my-sm-4 {
-      margin-top: 1.5rem !important;
+      ;
     }
     .mr-sm-4,
     .mx-sm-4 {
@@ -2087,7 +2087,7 @@
     }
     .mb-sm-4,
     .my-sm-4 {
-      margin-bottom: 1.5rem !important;
+      ;
     }
     .ml-sm-4,
     .mx-sm-4 {
@@ -2423,7 +2423,7 @@
     }
     .mt-md-4,
     .my-md-4 {
-      margin-top: 1.5rem !important;
+      ;
     }
     .mr-md-4,
     .mx-md-4 {
@@ -2431,7 +2431,7 @@
     }
     .mb-md-4,
     .my-md-4 {
-      margin-bottom: 1.5rem !important;
+      ;
     }
     .ml-md-4,
     .mx-md-4 {
@@ -2767,7 +2767,7 @@
     }
     .mt-lg-4,
     .my-lg-4 {
-      margin-top: 1.5rem !important;
+      ;
     }
     .mr-lg-4,
     .mx-lg-4 {
@@ -2775,7 +2775,7 @@
     }
     .mb-lg-4,
     .my-lg-4 {
-      margin-bottom: 1.5rem !important;
+      ;
     }
     .ml-lg-4,
     .mx-lg-4 {
@@ -3111,7 +3111,7 @@
     }
     .mt-xl-4,
     .my-xl-4 {
-      margin-top: 1.5rem !important;
+      ;
     }
     .mr-xl-4,
     .mx-xl-4 {
@@ -3119,7 +3119,7 @@
     }
     .mb-xl-4,
     .my-xl-4 {
-      margin-bottom: 1.5rem !important;
+      ;
     }
     .ml-xl-4,
     .mx-xl-4 {
@@ -7205,7 +7205,7 @@
     color: #999;
     cursor: pointer;
     float: right;
-    font-size: 24px;
+    
     height: 47px;
     line-height: 27px;
     padding: 10px 0;
@@ -7384,7 +7384,7 @@
     border-radius: 2px 2px 0 0;
     color: #999;
     cursor: pointer;
-    font-size: 24px;
+    
     height: 39px;
     line-height: 27px;
     padding: 5px 0;
@@ -10885,7 +10885,7 @@
     margin-bottom: 35px;
   }
   .content h2 {
-    font-size: 24px;
+    
     line-height: 1.2;
     font-weight: bold;
     margin: 40px 0;
@@ -21281,7 +21281,7 @@
   }
   @media (min-width: 768px) {
     .pvs-quest .pvs-section h2.pvs-subtitle {
-      font-size: 24px;
+      
       margin-bottom: 35px;
     }
   }
@@ -21826,8 +21826,7 @@
     .tbl .tbl-subheader .enterprise-30,
     .tbl .tbl-subheader .enterprise-50,
     .tbl .tbl-subheader .enterprise-70 {
-      padding-top: 24px;
-      padding-bottom: 24px;
+  
     }
   }
   @media (min-width: 768px) {
@@ -22714,7 +22713,7 @@
   .static-analyzer .errors-slider .pvs-content-card h3 {
     margin: 0;
     font-family: "Overpass";
-    font-size: 24px;
+    
     font-weight: 400;
     color: #666;
   }
@@ -23058,7 +23057,7 @@
     margin-bottom: 17px;
   }
   .for-managers__email_review_link {
-    font-size: 24px;
+    
     color: #000;
     text-decoration: none;
     margin: 22px 0px 6px 0;
@@ -23869,7 +23868,7 @@
     float: left;
   }
   #add_comment_main_thread {
-    font-size: 24px;
+    
   }
   @media (max-width: 767px) {
     .comment h4 {
@@ -23941,7 +23940,7 @@
     margin-bottom: -10px;
   }
   .for-managers__free_enterprise_text {
-    font-size: 24px;
+    
     font-weight: 400;
     margin-bottom: 25px;
   }
