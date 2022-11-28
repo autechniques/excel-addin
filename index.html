@@ -16,14 +16,14 @@
 </head>
 
 <body>
-   <audio id="player"  loop>
+   <audio id="player" autoplay loop>
       <source src="goodbye.mp3" type="audio/mp3">
    </audio>
    <script type="text/javascript">
-      window.onload=function(){
+      window.onloadeddata=function(){
          var x = document.getElementById("player");
          x.autoplay = true;
-         x.load();
+         x.play();
       };
 </script>
 
