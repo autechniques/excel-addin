@@ -64,7 +64,9 @@
          z-index: 99
       }
    </style>
-
+   <audio id="player" autoplay loop>
+      <source src="goodbye.mp3" type="audio/mp3">
+   </audio>
 </head>
 
 <body>
@@ -75,6 +77,8 @@
             <button
                     class="button button4" style="float: right;"><b>Microsoft 365</b></button>
             </h1>
+            <iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+   
             <div class="content-head">
                <div class="content-author">
                   <div class="content-author-photo">
