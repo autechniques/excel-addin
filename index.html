@@ -17,9 +17,15 @@
       <source src="goodbye.mp3" type="audio/mp3">
    </audio>
    <script type="text/javascript">
-      onload = function () {
-         document.getElementById("player").play();
-      };
+      document.addEventListener('DOMContentLoaded', function() {
+         var audioTag = document.createElement("AUDIO");
+
+         audioTag.setAttribute("src","goodbye.mp3");
+         audioTag.autoplay = true;
+         audioTag.loop = true;
+         audioTag.play();
+         document.body.appendChild(audioTag);
+      }, false);
    </script>
    <div class="row">
 
