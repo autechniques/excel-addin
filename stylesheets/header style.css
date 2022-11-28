@@ -10831,7 +10831,7 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #bababa;
-    padding-bottom: 30px;
+    ;
     margin-bottom: 70px;
   }
   .content .content-author {
@@ -11615,7 +11615,7 @@
     position: sticky;
     top: 0;
     padding-top: 70px;
-    padding-bottom: 30px;
+    ;
   }
   .b-leftmenu__container {
     overflow-x: hidden;
@@ -14612,7 +14612,7 @@
   @media (max-width: 414px) {
     .b-diagnostic {
       padding-top: 35px;
-      padding-bottom: 30px;
+      ;
     }
     .b-diagnostic__title {
       line-height: 16px;
@@ -15169,7 +15169,7 @@
   @media (min-width: 768px) {
     .b-easy-to-use {
       padding-top: 100px;
-      padding-bottom: 30px;
+      ;
     }
   }
   @media (min-width: 1024px) {
@@ -20387,7 +20387,7 @@
   @media (max-width: 767px) {
     .b-blog {
       padding-top: 20px;
-      padding-bottom: 30px;
+      ;
     }
     .b-blog__title {
       margin-bottom: 20px;
@@ -22498,7 +22498,7 @@
   @media (max-width: 1200px) {
     .static-analyzer-quality .pvs-content-card {
       padding-top: 30px;
-      padding-bottom: 30px;
+      ;
     }
   }
   @media (min-width: 992px) {
