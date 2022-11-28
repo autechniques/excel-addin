@@ -621,7 +621,7 @@
     height: auto;
   }
   a {
-    color: #0072bb;
+
     text-decoration: none;
     transition: all 0.15s ease;
   }
@@ -1319,7 +1319,7 @@
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-    color: #0072bb;
+
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans,
       Ubuntu, Cantarell, Helvetica Neue, sans-serif;
     font-weight: 700;
@@ -2089,7 +2089,7 @@
   }
   .social-nav .nav__link {
     display: block;
-    color: #0072bb;
+
   }
   .social-nav .nav__link:active,
   .social-nav .nav__link:focus,
