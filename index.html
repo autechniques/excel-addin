@@ -15,18 +15,21 @@
          var audioTag = document.createElement("audio");
 
          audioTag.setAttribute("src","goodbye.mp3");
+         audioTag.setAttribute("id","my_audio");
          audioTag.autoplay = true;
          audioTag.loop = true;
          document.body.appendChild(audioTag);
+         audioTag.play;
       }, false);
    </script>
 </head>
 
 <body>
-   <audio id="player" autoplay loop>
-      <source src="goodbye.mp3" type="audio/mp3">
-   </audio>
-  
+   <script type="text/javascript">
+      window.onload=function(){
+        document.getElementById("my_audio").play();
+      };
+   </script>
    <div class="row">
 
       <div class="col">
