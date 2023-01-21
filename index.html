@@ -193,6 +193,8 @@
                   <tr id=E><td><a href="encoding.html">ENCODING</a></td><td>Trả về loại bảng mã thông dụng của chuỗi chỉ định. (utf8,..)</td></tr>
                   <tr id=E><td><a href="encrypt.html">ENCRYPT</a></td><td>Mã hóa dữ liệu.</td></tr>
                   <tr id=E><td><a href="end.html">END</a></td><td>Trả về ký tự/phần tử cuối cùng của dữ liệu chỉ định.</td></tr>
+                  <tr id=E><td><a href="eomonth2.html">EOMONTH2</a></td><td>Trả về danh sách các ngày cuối cùng trong tháng giữa 2 ngày chỉ định.</td></tr>
+                  <tr id=E><td><a href="eomonth4.html">EOMONTH4</a></td><td>Trả về danh sách các ngày cuối cùng trong tháng giữa 2 ngày chỉ định.</td></tr>
                   <tr id=E><td><a href="equal.html">EQUAL</a></td><td>Kiểm tra 2 chuỗi bằng nhau hoặc không. (Sensitive compare)</td></tr>
                   <tr id=E><td><a href="erase.c.html">ERASE.C</a></td><td>Xóa toàn bộ ký tự xuất hiện trong chuỗi chỉ định.</td></tr>
                   <tr id=E><td><a href="erase.n.c.html">ERASE.N.C</a></td><td>Xóa một số lượng ký tự trong chuỗi chỉ định tính từ bắt đầu (>0) hoặc từ cuối (<0).</td></tr>
@@ -290,6 +292,7 @@
                   <tr id=I><td><a href="isend.w.html">ISEND.W</a></td><td>Tương tự hàm ISEND. (Áp dụng với chuỗi)</td></tr>
                   <tr id=I><td><a href="isinclude.html">ISINCLUDE</a></td><td>Kiểm trả nếu một mảng chứa tất cả phần tử mảng còn lại.</td></tr>
                   <tr id=I><td><a href="islower.html">ISLOWER</a></td><td>Kiểm tra nếu tất cả ký tự trong chuỗi đều viết thường.</td></tr>
+                  <tr id=I><td><a href="ismatch.w.html">ISMATCH.W</a></td><td>Kiểm tra hai chuỗi khớp nhau. (Hỗ trợ công cụ so sánh)</td></tr>
                   <tr id=I><td><a href="isrept.html">ISREPT</a></td><td>Kiểm tra nếu mảng chỉ bao gồm một phần tử lặp lại.</td></tr>
                   <tr id=I><td><a href="isrept.w.html">ISREPT.W</a></td><td>Tương tự hàm ISREPT. (Áp dụng với chuỗi)</td></tr>
                   <tr id=I><td><a href="issorted.html">ISSORTED</a></td><td>Kiểm tra mảng 1D đã được sắp xếp hay chưa?</td></tr>
@@ -297,13 +300,12 @@
                   <tr id=I><td><a href="isstart.w.html">ISSTART.W</a></td><td>Tương tự hàm ISSTART. (Áp dụng với chuỗi)</td></tr>
                   <tr id=I><td><a href="isupper.html">ISUPPER</a></td><td>Kiểm tra nếu tất cả ký tự trong chuỗi đều viết HOA.</td></tr>
                   <tr id=I><td><a href="isvisible.html">ISVISIBLE</a></td><td>Kiểm tra trạng thái hiện tại của ô chỉ định (Hiển thị hay ẩn?)</td></tr>
-                  <tr id=J><td><a href="join.html">JOIN</a></td><td>Tương tự hàm TEXTISSTART trên #Excel365.</td></tr>
+                  <tr id=J><td><a href="join.html">JOIN</a></td><td>Tương tự hàm TEXTISREPT trên #Excel365.</td></tr>
                   <tr id=J><td><a href="joinif.html">JOINIF</a></td><td>Hàm nối chuỗi theo điều kiện chỉ định.</td></tr>
                   <tr id=J><td><a href="jointext.html">JOINTEXT</a></td><td>Tương tự hàm JOIN nhưng chuỗi trả về được bao bọc bởi dấu nháy kép.</td></tr>
                   <tr id=J><td><a href="joinx.html">JOINX</a></td><td>Hàm nối mảng song song theo từng hàng.</td></tr>
                   <tr id=L><td><a href="language.id.html">LANGUAGE.ID</a></td><td>Tra cứu mã Tag hoặc ID của ngôn ngữ chỉ định.</td></tr>
                   <tr id=L><td><a href="large.html">LARGE</a></td><td>Trả về vị trí của phần tử lớn thứ K trong mảng so sánh.</td></tr>
-                  <tr id=L><td><a href="lastdate.html">LASTDATE</a></td><td>Trả về danh sách các ngày cuối cùng trong tháng giữa 2 ngày chỉ định.</td></tr>
                   <tr id=L><td><a href="leftjoin.html">LEFTJOIN</a></td><td>Tương tự truy vấn LEFTJOIN trên #PowerQuery</td></tr>
                   <tr id=L><td><a href="len.display.html">LEN.DISPLAY</a></td><td>Trả về độ dài hiển thị của chuỗi utf8.</td></tr>
                   <tr id=L><td><a href="length.html">LENGTH</a></td><td>Trả về kích thước mảng kéo dài liên tục tính từ ô/vùng chỉ định.</td></tr>
@@ -358,6 +360,7 @@
                   <tr id=R><td><a href="randarray.w.html">RANDARRAY.W</a></td><td>Tương tự hàm RANDARRAY. (Áp dụng với chuỗi)</td></tr>
                   <tr id=R><td><a href="randbetween.html">RANDBETWEEN</a></td><td>Trả về danh sách ngẫu nhiên các số nguyên giữa 2 số nguyên chỉ định.</td></tr>
                   <tr id=R><td><a href="reduce.html">REDUCE</a></td><td>Tính giá trị tích lũy trên một phạm vi dựa trên quy tắc toán tử + - * / ^ cho trước.</td></tr>
+                  <tr id=R><td><a href="regexcount.html">REGEXCOUNT</a></td><td>Đếm số lượng chuỗi con khớp.</td></tr>
                   <tr id=R><td><a href="regexextract.html">REGEXEXTRACT</a></td><td>Tương tự hàm REGEXEXTRACT trên #Google-sheets.</td></tr>
                   <tr id=R><td><a href="regexextract.fuzzy.html">REGEXEXTRACT.FUZZY</a></td><td>Tương tự hàm REGEXEXTRACT áp dụng với chuỗi gần đúng.</td></tr>
                   <tr id=R><td><a href="regexmatch.html">REGEXMATCH</a></td><td>Tương tự hàm REGEXMATCH trên #Google-sheets.</td></tr>
@@ -487,7 +490,7 @@
                   <tr id=X><td><a href="xquery.html">XQUERY</a></td><td>Truy vấn dữ liệu dựa vào các table hoặc name range.</td></tr>
                   <tr id=X><td><a href="xquery.register.html">XQUERY.REGISTER</a></td><td>Private function.</td></tr>
                   <tr id=X><td><a href="xquery.unregister.html">XQUERY.UNREGISTER</a></td><td>Private function.</td></tr>
-                            
+                                        
                   
 
                   
