@@ -1,23 +1,29 @@
 <!-- 850*360 -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>EMAIL.SEND</title>
+    <title>EMAIL.REGISTER</title>
     <link rel="stylesheet" type="text/css" href="function/code-inner.css">
     <link rel="stylesheet" type="text/css" href="function/macros.css">
     </head>
     <body>
-    <h1 >EMAIL.SEND function
+    <h1 >EMAIL.REGISTER function
      <a href="interface.html"><button class="button button4" style="float: right;"><b>Download</b></button></a>
     </h1>
     
-    <p><div>Hàm thực thi chương trình gửi mail hàng loạt.</div></p>
+    <p><div>Hàm triển khai ứng dụng gửi mail hàng loạt.</div></p>
     
-    <img src="gif/email.send.gif">
+    <img src="gif/email.register.gif">
     <blockquote>
-        <p>&nbsp;Các lưu ý:</p>
-        <p>&nbsp;1. Đối số format có 3 tùy chọn bao gồm: gửi thuần text, gửi html text và có thể bao gồm image.</p>
-        <p>&nbsp;2. Nội dung thư càng nhiều kiểu định dạng cũng như nhiều file đính kèm sẽ ảnh hưởng tới tốc độ gửi thư.</p>
-        <p>&nbsp;3. Để tránh gửi thư vào mục spam, xem các quy cách gửi thư để tránh bị liệt kê vào mục spam.</p>
-        <p>&nbsp;4. Giới hạn số lượng mail trong mỗi tin và số lượng tin được gửi trong ngày phụ thuộc loại tài khoản mail (google để biết thêm chi tiết)</p>
+        <p>&nbsp;Để sử dụng hàm, trước tiên bạn cần đăng ký ứng dụng gửi mail của riêng mình.</p>
+        <p>&nbsp;Đăng nhập tài khoản google và truy cập link: https://accounts.google.com/signin/v2/challenge/pwd</p>
+        <p>&nbsp;Chọn mục security (bảo mật) -> bật tính năng xác thực 2 bước.</p>
+        <img src="images/mail.setting.png">
+
+        <p>&nbsp;Sau khi bật, google sẽ tạo mật khẩu ứng dụng tự động, bạn chỉ việc truy cập và copy mật khẩu này.</p>
+        <img src="images/mail.password.png">
+
+        <p>&nbsp;Cuối cùng mở Excel và điền các thông tin Mail, Pass và UserName(tùy ý).</p>
+        <p>&nbsp;Sau khi đăng ký thành công, sử dụng hàm EMAIL.SEND để gửi mail hàng loạt.</p>
+        <p>&nbsp;Khi không còn sử dụng, gọi hàm EMAIL.UNREGISTER để thoát.</p>
     </blockquote>
     
     <p><strong>Related function</strong></p>
