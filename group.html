@@ -1,29 +1,27 @@
-<!-- 850*360 -->
 <html>
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>AUTOCOMPLETE</title>
+  <title>GROUP</title>
   <link rel="stylesheet" type="text/css" href="function/code-inner.css">
   <link rel="stylesheet" type="text/css" href="function/macros.css">
 </head>
 
 <body>
-  <h1 id="group">AUTOCOMPLETE function
-     <a href="interface.html"><button class="button button4" style="float: right;"><b>Download</b></button></a>
+  <h1 id="group">GROUP function
+    <a href="interface.html"><button class="button button4" style="float: right;"><b>Download</b></button></a>
   </h1>
 
   <p>
-    <div>Sử dụng hàm để thiết lập nhanh tính năng hiển thị từ theo gợi ý (AutoComplete).</div>
+  <div>- Phân loại: nhóm hàm báo cáo thống kê tính năng tương tự Pivot (Nhanh, mạnh, tùy biến cao).</div>
+  <div>- Chức năng: phân nhóm bảng dữ liệu dựa trên trường (cột) chỉ định, hỗ trợ tính toán tùy chỉnh.</div>
   </p>
   <p>
     <hr style="height:1px;border-width:0;color:lightgray;background-color:lightgray">
   </p>
 
   <blockquote>
-    <p>&nbsp;VD1: Chú ý hàm có nhiều tham số, nhưng chỉ cần quan tâm tham số đầu và cuối.</p>
-    <p>&nbsp;Tham số 1: chỉ định danh sách từ gợi ý.</p>
-    <p>&nbsp;Tham số 2: dùng để bật hoặc tắt gợi ý.</p>
+    <p>&nbsp;VD1: Liệt kê tất cả đơn hàng và tính tổng doanh thu tương ứng.</p>
   </blockquote>
   <img src="gif/group.gif">
 
@@ -32,13 +30,43 @@
   </p>
 
   <blockquote>
-  
-    <p>&nbsp;Sử dụng phím TAB để hoàn thành cụm từ.</p>
-    <p>&nbsp;Hỗ trợ lăn chuột hoặc phím mũi tên để di chuyển lên xuống.</p>
+    <p>&nbsp;VD2: Liệt kê tất cả mã hàng và tính tổng theo phân vùng từng đợt.</p>
   </blockquote>
-  
+  <img src="gif/group-hstack.gif">
+  <p>
+    <hr style="height:1px;border-width:0;color:lightgray;background-color:lightgray">
+  </p>
 
-  
+  <blockquote>
+    <p>&nbsp;VD3: Phân nhóm dựa trên 2 tiêu chí (STT và Họ tên) và nối các mã kết quả với nhau bởi dấu phân tách.</p>
+  </blockquote>
+  <img src="gif/group-join.gif">
+
+  <p>
+    <hr style="height:1px;border-width:0;color:lightgray;background-color:lightgray">
+  </p>
+
+  <blockquote>
+    <p>&nbsp;VD4: Thống kê tất cả tên đơn và tổng số lượng mỗi đơn theo từng ngày trong khoảng thời gian chỉ định.</p>
+  </blockquote>
+  <img src="gif/group-betweenmonth.gif">
+
+  <p>
+    <hr style="height:1px;border-width:0;color:lightgray;background-color:lightgray">
+  </p>
+
+  <blockquote>
+    <p>&nbsp;VD5: Thống kê tất cả ID, mã hàng và số lượng tương ứng theo từng tháng.</p>
+  </blockquote>
+  <img src="gif/group-unpivot.gif">
+
+  <blockquote>
+    <p>&nbsp;Chú ý: Hàm không phụ thuộc vào số lượng cột cũng như số lượng dòng dữ liệu.</p>
+    <p style="white-space: pre-line">&nbsp;Bất kỳ khi nào bài toán yêu cầu tính toán phân nhóm hoặc dữ liệu có thể xử lý
+      bằng PIVOT bạn đều có thể xem xét
+      &nbsp;sử dụng hàm GROUP.</p>
+  </blockquote>
+
   <p><strong>Related function</strong></p>
   <p>
     <a href="groupby.html">GROUPBY</a>
@@ -48,12 +76,10 @@
     <a href="xgroup.html">XGROUP</a>&nbsp;&nbsp;&nbsp;Hàm mở rộng của GROUP. (hỗ trợ các hàm nâng cao).
   </p>
   <p>
-    <a href="increase.adj.html">INCREASE.ADJ</a>&nbsp;&nbsp;&nbsp;Đánh số thứ tự tăng dần theo từng phân nhóm hoặc phần tử trong phân nhóm đó.
+    <a href="increase.adj.html">INCREASE.ADJ</a>&nbsp;&nbsp;&nbsp;Đánh số thứ tự tăng dần theo từng phân nhóm hoặc phần
+    tử trong phân nhóm đó.
   </p>
   <p>Return to <a href="index.html">Home</a></p>
-
-
-
 </body>
 
 </html>
