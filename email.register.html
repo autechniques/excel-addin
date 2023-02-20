@@ -22,7 +22,7 @@
     <img src="images/mail.setting.png">
 
     <blockquote>
-        <p>&nbsp;Sau khi bật, google sẽ tạo mật khẩu ứng dụng tự động, bạn chỉ việc truy cập và copy mật khẩu này.</p>
+        <p>&nbsp;Sau khi bật, google sẽ tạo mật khẩu ứng dụng tự động, bạn chỉ việc truy cập và copy mật khẩu này làm đối số cuối của hàm EMAIL.REGISER.</p>
     </blockquote>
     
     <img src="images/mail.password.png">
@@ -30,7 +30,8 @@
         <hr style="height:1px;border-width:0;color:lightgray;background-color:lightgray">
       </p>
     <blockquote>
-        <p>&nbsp;Cuối cùng mở Excel và điền các thông tin Mail, Pass và UserName(tùy ý).</p>
+        <p>&nbsp;Cuối cùng mở Excel và điền các thông tin Mail, Pass và UserName(đặt tùy ý) VD: EMAIL.REGISTER("excel7@gmail.com","1234","auexpress").</p>
+        <p>&nbsp;Các thông tin này được lưu lại. Lần sau, chỉ cần gọi hàm =EMAIL.REGISTER() mà không cần điền thông tin.</p>
         <p>&nbsp;⚊ Sau khi đăng ký thành công, sử dụng hàm EMAIL.SEND để gửi mail hàng loạt.</p>
         <p>&nbsp;⚊ Khi không còn sử dụng, gọi hàm EMAIL.UNREGISTER để thoát.</p>
     </blockquote>
