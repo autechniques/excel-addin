@@ -71,14 +71,14 @@
     <p style="white-space: pre-line">&nbsp;Các hàm phụ trợ bao gồm:
         - SUM
         - MEDIAN                                            [vd: median(c1,2,3)]
-        - MAX/MIN/AVERAGE                                   [vd: cell(c1) tương ứng index(c1,0)]
+        - MAX/MIN/AVERAGE                                   
         - COUNT/COUNTA/COUNTNIL/COUNTBLANK                  [áp dụng đếm số/đếm không trống/đếm trống/đếm trống và chuỗi trống]
         - COUNTUNIQUE                                       [vd: countunique(c1) đếm số giá trị duy nhất trên cột c1]
         - COUNTUNIQUEROWS                                   [vd: countuniquerows(c1) đếm hàng duy nhất trong chính phân nhóm đó]
-        - MAXIF/MINIF/COUNTIF/SUMIF/AVERAGEIF/PRODUCTIF     [vd: maxif(c1,'>5') hoặc maxif(c1,'>0',c2)]
-        - ROWS                                              [vd: v=max(c1), r=row(v) chỉ áp dụng với các biến tồn tại thuộc tính ROW như max,min,first,last]
-        - INDEX/MATCH                                       [vd: index(c1,5), match('a',c2,0) [tham số cuối >0 (tìm trên xuống) hoặc <0 (tìm dưới lên)]
-        - JOIN/JOINIF                                       [vd: join(',',,c1) hoặc joinif(',',,'>5',c1)]
+        - MAXIF/MINIF/COUNTIF/SUMIF/AVERAGEIF/PRODUCTIF     [vd: maxif('>5')]
+        - ROWS                                              [vd: v=rows(c1)]
+        - INDEX/MATCH                                       [vd: index(5), match('a')
+        - JOIN/JOINIF                                       [vd: join(',') hoặc joinif(',',,'>5')]
         </p>
 </blockquote>
   <p>
