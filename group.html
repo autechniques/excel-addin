@@ -65,18 +65,22 @@
   <blockquote>
     <p style="white-space: pre-line">&nbsp;Chú ý: 
       - Hàm không phụ thuộc vào số lượng cột cũng như số lượng dòng dữ liệu.
-      - Bất kỳ yêu cầu tính toán phân nhóm hoặc dữ liệu có thể xử lý bằng PIVOT bạn đều có thể xem xét sử dụng hàm GROUP.</p>
+      - Bất kỳ yêu cầu tính toán phân nhóm hoặc dữ liệu có thể xử lý bằng PIVOT bạn đều có thể xem xét sử dụng hàm GROUP.
+      - Hàm hỗ trợ thêm cột mới (vị trí cuối cùng) để tính giá trị ẩn phụ.
+      - Vd: =GROUP.\AU(SPLITY.\AU(A3:B6,";",,2),,{1,2},3,"COUNTA") sẽ bị lỗi tại cột 3. sửa bằng cách tăng A3:B6 thành 3 cột hoặc cột 3 phải tính theo ẩn phụ.
+      - Chỉ cho phép đặt ẩn phụ trong phạm vi cột (Vd: GROUP(array,,1,"v1=max",2,"v2=min",3,"v1+v2")).
+    </p>
   </blockquote>
   <blockquote>
     <p style="white-space: pre-line">&nbsp;Các hàm phụ trợ bao gồm:
         - SUM
-        - MEDIAN                                            [vd: median(c1,2,3)]
+        - MEDIAN                                            
         - MAX/MIN/AVERAGE                                   
-        - COUNT/COUNTA/COUNTNIL/COUNTBLANK                  [áp dụng đếm số/đếm không trống/đếm trống/đếm trống và chuỗi trống]
-        - COUNTUNIQUE                                       [vd: countunique(c1) đếm số giá trị duy nhất trên cột c1]
-        - COUNTUNIQUEROWS                                   [vd: countuniquerows(c1) đếm hàng duy nhất trong chính phân nhóm đó]
+        - COUNT/COUNTA/COUNTNIL/COUNTBLANK                  [vd: đếm số/đếm không trống/đếm trống/đếm trống và chuỗi trống]
+        - COUNTUNIQUE                                       [vd: đếm số giá trị duy nhất trên cột c1]
+        - COUNTUNIQUEROWS                                   [vd: đếm số hàng duy nhất trong chính phân nhóm đó]
         - MAXIF/MINIF/COUNTIF/SUMIF/AVERAGEIF/PRODUCTIF     [vd: maxif('>5')]
-        - ROWS                                              [vd: v=rows(c1)]
+        - ROWS                                              [vd: trả về số lượng phần tử mỗi nhóm]
         - INDEX/MATCH                                       [vd: index(5), match('a')
         - JOIN/JOINIF                                       [vd: join(',') hoặc joinif(',',,'>5')]
         </p>
