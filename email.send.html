@@ -11,14 +11,14 @@
     <p>
         <hr style="height:1px;border-width:0;color:lightgray;background-color:lightgray">
       </p>
-    <p><div>Hàm thực thi chương trình gửi mail hàng loạt.</div></p>
+    <p><div>Hàm thực thi chương trình gửi mail hàng loạt (Gửi đến nhiều người, nhiều file đính kèm đồng thời, hỗ trợ định dạng HTML).</div></p>
     
     <img src="gif/email.send.gif">
 
     <blockquote>
-        <p>&nbsp;Trước khi sử dụng hàm này cần đăng ký ứng dụng MAIL trước và khởi động ứng dụng bằng hàm EMAIL.REGISTER.</p>
-        <p>&nbsp;Nếu muốn an toàn, bạn nên gọi các hàm này thông qua VBA, sử dụng các vòng lặp để gửi MAIL.</p>
-        <p>&nbsp;1. Hàm có nhiều tham số với chức năng như tên gọi của chính nó, chủ yếu quan tâm tham số [mail_content] và [format]</p>
+        <p>&nbsp;Trước khi sử dụng hàm này hãy đọc hàm EMAIL.REGISTER (bạn cần tạo sẵn tài khoản gồm user & password).</p>
+        <p>&nbsp;Nếu muốn gửi thư tiêu chuẩn, bạn nên gọi các hàm này thông qua VBA, sử dụng các vòng lặp để gửi MAIL.</p>
+        <p>&nbsp;1. Hàm có nhiều tham số, bạn đọc chủ yếu quan tâm tham số [mail_content] và [format] </p>
         <p>&nbsp;2. Nội dung thư càng lớn, hoặc nhiều kiểu định dạng hoặc nhiều files đính kèm sẽ ảnh hưởng tới thời gian gửi thư.</p>
 
         <p>&nbsp;⚊ Nếu tham số [format]=0: mail thuần text (không có định dạng bảng, màu sắc) cho tốc độ gửi nhanh nhất.</p>

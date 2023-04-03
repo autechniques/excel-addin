@@ -15,14 +15,14 @@
     
     <blockquote>
         <p>&nbsp;⚊ Để sử dụng hàm, trước tiên bạn cần đăng ký ứng dụng gửi mail của riêng mình.</p>
-        <p>&nbsp;⚊ Đăng nhập tài khoản google và truy cập link: https://accounts.google.com/signin/v2/challenge/pwd</p>
+        <p>&nbsp;⚊ Đăng nhập tài khoản google và truy cập link (copy&paste): https://accounts.google.com/signin/v2/challenge/pwd</p>
         <p>&nbsp;⚊ Chọn mục security (bảo mật) -> bật tính năng xác thực 2 bước.</p>
     </blockquote>
     
     <img src="images/mail.setting.png">
 
     <blockquote>
-        <p>&nbsp;Sau khi bật, google sẽ tạo mật khẩu ứng dụng tự động, bạn chỉ việc truy cập và copy mật khẩu này làm đối số cuối của hàm EMAIL.REGISER.</p>
+        <p>&nbsp;Sau khi bật, google sẽ tạo mật khẩu ứng dụng tự động, copy user và mật khẩu này rồi mở Excel và sử dụng hàm EMAIL.REGISTER để xác thực.</p>
     </blockquote>
     
     <img src="images/mail.password.png">
@@ -30,8 +30,8 @@
         <hr style="height:1px;border-width:0;color:lightgray;background-color:lightgray">
       </p>
     <blockquote>
-        <p>&nbsp;Cuối cùng mở Excel và điền các thông tin Mail, Pass và UserName(đặt tùy ý) VD: EMAIL.REGISTER("excel7@gmail.com","1234","auexpress").</p>
-        <p>&nbsp;Các thông tin này được lưu lại. Lần sau, chỉ cần gọi hàm =EMAIL.REGISTER() mà không cần điền thông tin.</p>
+        <p>&nbsp;Điền các thông tin Mail, Pass và UserName(đặt tùy ý) vào hàm: EMAIL.REGISTER("excel7@gmail.com","1234","auexpress").</p>
+        <p>&nbsp;Các thông tin này được lưu lại cho lần sau, chỉ cần gọi hàm =EMAIL.REGISTER() mà không cần điền thông tin.</p>
         <p>&nbsp;⚊ Sau khi đăng ký thành công, sử dụng hàm EMAIL.SEND để gửi mail hàng loạt.</p>
         <p>&nbsp;⚊ Khi không còn sử dụng, gọi hàm EMAIL.UNREGISTER để thoát.</p>
     </blockquote>
@@ -39,7 +39,7 @@
     <p><strong>Related function</strong></p>
     
     <p>
-    <a href="email.register.html">EMAIL.REGISTER</a>&nbsp;&nbsp;&nbsp;Kết nối ứng dụng mail (Áp dụng với tài khoản gmail hoặc outlook).
+    <a href="email.send.html">EMAIL.SEND</a>&nbsp;&nbsp;&nbsp;Hàm gửi mail hàng loạt (Áp dụng với Gmail hoặc Outlook).
     </p>
     
     <p>Return to <a href="index.html">Home</a></p>
