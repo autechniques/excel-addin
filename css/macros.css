@@ -29,18 +29,18 @@ strong {
 	font-weight: bold;
 	font-size: 16px;
 }
-
-#macros {
-	border-collapse: collapse;
-}
-#macros note tr td a {
-	text-decoration: none;
-}
-#macros note {
+strong2 {
     font-size: 20px;
     color: rgb(206 28 28);
     font-weight: bold;
 }
+#macros {
+	border-collapse: collapse;
+}
+#macros tr td a {
+	text-decoration: none;
+}
+
 #macros tr {
 	border: 1px black;
 }
