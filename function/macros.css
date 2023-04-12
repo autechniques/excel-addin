@@ -31,7 +31,11 @@ strong {
 	color: rgb(4, 170, 109);
 	font-weight: bold;
 }
-
+note {
+    font-size: 20px;
+    color: rgb(206 28 28);
+    font-weight: bold;
+}
 
 
 #macros {
