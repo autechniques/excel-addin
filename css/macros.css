@@ -30,6 +30,12 @@ strong {
 	font-size: 16px;
 }
 
+note {
+    font-size: 20px;
+    color: rgb(206 28 28);
+    font-weight: bold;
+}
+
 #macros {
 	border-collapse: collapse;
 }
