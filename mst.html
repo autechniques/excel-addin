@@ -14,8 +14,10 @@
     </h1>
 
     <p>
-    <div>Hàm hỗ trợ tra cứu mã số thuế (quét MST từ các website uy tín) dành cho cá nhân & doanh nghiệp. </div>
+    <div>Hàm chính hỗ trợ tra cứu mã số thuế (quét MST từ các website, cơ sở dữ liệu uy tín) bao gồm cá nhân & doanh nghiệp. </div>
     </p>
+
+    <img src="gif/mst.cn.png">
 
     <p tabindex="-1" dir="auto">
         <note>
@@ -29,15 +31,16 @@
         </note>
      </p>
     <blockquote>
-        <p>&nbsp;1. Các thông tin trả về bao gồm: MST + Tên (CN-DN) + Địa chỉ + Cục quản lý + CMT/CCCD + Ngày cấp + Tình
-            trạng.</p>
-        <p>&nbsp;2. Có thể chỉ định tham số tra cứu bao gồm: (0) tự động, hoặc (1) MST hoặc (2) CMND/CCCD.</p>
-        <p>&nbsp;3. Trước khi sử dụng, hãy đảm bảo tốc độ internet ổn định bằng cách load thử web (youtube,..) nhằm
+        <p>&nbsp;1. Các thông tin trả về gồm 6 thành phần như ảnh phía trên.</p>
+        <p>&nbsp;2. Hàm gồm 2 tham số, có thể chỉ định tham số thứ 2 [option]= (0) tự động | (1) MST | (2) CMND/CCCD.</p>
+        <p>&nbsp;&nbsp; VD: =MST(A1:A10,2) sẽ tra cứu thông tin theo CMND/CCCD.</p>
+        <p>&nbsp;3. Nếu muốn hiển thị gợi ý hàm, bạn cần cài đặt AUExpress_Tools.exe #Add-in. Nếu không bạn chỉ cần nhớ các tham số hàm.</p>
+        <p>&nbsp;4. Trước khi sử dụng, hãy đảm bảo tốc độ internet ổn định bằng cách load thử một số trang web (face,youtube,..) nhằm
             tránh tình trạng phản hồi chậm.</p>
-        <p>&nbsp;4. Trong trường hợp xấu, một mã có thể mất vài giây tìm kiếm.</p>
-        <p>&nbsp;5. Sau khi dùng hàm, bạn đọc kiểm chứng bằng cách so sánh kết quả với mã tra cứu chính thức từ Tổng cục
+        <p>&nbsp;5. Trong trường hợp xấu, một mã có thể mất vài giây tìm kiếm.</p>
+        <p>&nbsp;6. Sau khi dùng hàm, bạn đọc kiểm chứng bằng cách so sánh kết quả với mã tra cứu chính thức từ Tổng cục
             để áp dụng vào công việc.</p>
-        <p>&nbsp;6. Thời gian chờ cho mỗi lần quét thất bại là 30s, nếu tìm thấy hàm trả về tất cả các kết quả .</p>
+        <p>&nbsp;7. Thời gian chờ cho mỗi lần quét thất bại là 30s, nếu tìm thấy hàm trả về tất cả các kết quả .</p>
     </blockquote>
 
 
@@ -46,7 +49,9 @@
     <p>
         <a href="mst.dn.html">MST.DN</a>&nbsp;&nbsp;&nbsp;Hàm tra cứu mã số thuế lấy thông tin cho DN.
     </p>
-
+    <p>
+        <a href="mst.cn.html">MST.CN</a>&nbsp;&nbsp;&nbsp;Hàm tra cứu mã số thuế lấy thông tin cho CN.
+    </p>
     <p>Return to <a href="index.html">Home</a></p>
 
 </body>
