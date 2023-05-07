@@ -6,6 +6,11 @@
     <title>XGROUP</title>
     <link rel="stylesheet" type="text/css" href="function/code-inner.css">
     <link rel="stylesheet" type="text/css" href="function/macros.css">
+    <style>
+        .tab4 {
+            tab-size: 8;
+        }
+    </style>
 </head>
 
 <body>
@@ -45,11 +50,11 @@
 
     <blockquote>
         <p style="white-space: pre-line">&nbsp;Các hàm phụ trợ bao gồm:
-            - SUM
+            - SUM                                               [vd: sum(c1,2,3)]
             - MEDIAN                                            [vd: median(c1,2,3)]
             - MAX/MIN/AVERAGE                                   [vd: max(c1,c2,c5)]
             - PRODUCT/DIVIDE                                    [áp dụng đối với biến: product(c1,c5) thay vì c1*c5]
-            - CELL                                              [vd: cell(c1) tương ứng index(c1,0)]
+            - CELL                                              [vd: cell(c1) tương ứng index(c1,1)]
             - COUNT/COUNTA/COUNTNIL/COUNTBLANK                  [áp dụng đếm số/đếm không trống/đếm trống/đếm trống và chuỗi trống]
             - COUNTUNIQUE                                       [vd: countunique(c1) đếm số giá trị duy nhất trên cột c1]
             - COUNTUNIQUEROWS                                   [vd: countuniquerows(c1) đếm hàng duy nhất trong chính phân nhóm đó]
@@ -59,11 +64,11 @@
             - FIRST/LAST                                        [vd: first(c1)]
             - TAKE/DROP                                         [vd: take(c1,5) hoặc drop(c1,-5)]
             - UNIQUE/SORT                                       [vd: unique(c1), sort(c1,1) [tham số cuối sắp xếp >0 (tăng dần) <0 (giảm dần)]
-            - LEN
+            - LEN                                               [vd: len(c1)]
             - JOIN/JOINIF                                       [vd: join(',',,c1) hoặc joinif(',',,'>5',c1)]
             - MID/LEFT/RIGHT/TEXTBEFORE/TEXTAFTER               [vd: textbefore(c1,'abc')]
             - TRIM/REPLACE/QUOTE                                [vd: replace(c1,'a','b') hoặc quote(c1)]
-            - UPPER/LOWER/PROPER/SENTENCE
+            - UPPER/LOWER/PROPER/SENTENCE                       [vd: upper(c1)]
             - ABS/ROUND/ROUNDUP/ROUNDDOWN/CEILING               [vd: round(c1,2) làm tròn 2 chữ số thập phân]
         </p>
     </blockquote>
