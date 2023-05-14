@@ -387,7 +387,7 @@
                   <tr id=D><td><a href="date.name.html">DATE.NAME</a></td><td>Trả về tên của ngày trong tuần. (Hỗ trợ nhiều ngôn ngữ)</td></tr>
                   <tr id=D><td><a href="datetowords.html">DATETOWORDS</a></td><td>Đọc ngày thành chữ.</td></tr>
                   <tr id=D><td><a href="decrypt.html">DECRYPT</a></td><td>Giải mã là lấy văn bản đã được mã hóa bởi hàm ENCRYPT.</td></tr>
-                  <tr id=D><td><a href="degree2text.html">DEGREE2TEXT</a></td><td>Chuyển đổi độ (số thực) sang text.</td></tr>
+                  <tr id=D><td><a href="degreetotext.html">DEGREETOTEXT</a></td><td>Chuyển đổi độ (số thực) sang text.</td></tr>
                   <tr id=D><td><a href="divide.html">DIVIDE</a></td><td>Phân chia lại mảng.</td></tr>
                   <tr id=D><td><a href="drop.html">DROP</a></td><td><img src="https://support.content.office.net/en-us/media/8f5fa894-48e1-47bc-a16b-6d4e8b42aba9.png" alt="Office 365 button" loading="lazy"></td></tr>
                   <tr id=D><td><a href="drop.c.html">DROP.C</a></td><td>Xóa một số lượng ký tự trong chuỗi chỉ định tính từ bắt đầu (>0) hoặc từ cuối (<0).</td></tr>
@@ -410,10 +410,10 @@
                   <tr id=E><td><a href="eraseif.c.html">ERASEIF.C</a></td><td>Xóa ký tự thỏa mãn điều kiện [ARRAY] trong mảng cho trước.</td></tr>
                   <tr id=E><td><a href="eraseif.not.w.html">ERASEIF.NOT.W</a></td><td>Xóa tất cả các từ không thỏa mãn điều kiện [OPERATOR] trong chuỗi.</td></tr>
                   <tr id=E><td><a href="eraseif.w.html">ERASEIF.W</a></td><td>Xóa tất cả các từ thỏa mãn điều kiện [OPERATOR] trong chuỗi.</td></tr>
-                  <tr id=E><td><a href="eraseifn.c.html">ERASEIFN.C</a></td><td>Xóa tất cả các từ thỏa mãn điều kiện [BYTE] theo phân đoạn.</td></tr>
-                  <tr id=E><td><a href="eraseifn.not.c.html">ERASEIFN.NOT.C</a></td><td>Xóa tất cả các từ không thỏa mãn điều kiện [BYTE] theo phân đoạn.</td></tr>
-                  <tr id=E><td><a href="erasen.c.html">ERASEN.C</a></td><td>Xóa các ký tự chỉ định theo phân đoạn.</td></tr>
-                  <tr id=E><td><a href="erasen.not.c.html">ERASEN.NOT.C</a></td><td>Xóa các ký tự không được chỉ định theo phân đoạn.</td></tr>
+                  <tr id=E><td><a href="erasen.c.html">ERASEN.C</a></td><td>Xóa tất cả các từ thỏa mãn điều kiện [BYTE] theo phân đoạn.</td></tr>
+                  <tr id=E><td><a href="erasen.not.c.html">ERASEN.NOT.C</a></td><td>Xóa tất cả các từ không thỏa mãn điều kiện [BYTE] theo phân đoạn.</td></tr>
+                  <tr id=E><td><a href="erasenif.c.html">ERASENIF.C</a></td><td>Xóa các ký tự chỉ định theo phân đoạn.</td></tr>
+                  <tr id=E><td><a href="erasenif.not.c.html">ERASENIF.NOT.C</a></td><td>Xóa các ký tự không được chỉ định theo phân đoạn.</td></tr>
                   <tr id=E><td><a href="eval.html">EVAL</a></td><td>Đánh giá biểu thức đại số dạng chuỗi. (Hàm cơ bản)</td></tr>
                   <tr id=E><td><a href="eval.ev.html">EVAL.EV</a></td><td>Đánh giá biểu thức đại số thông qua biến nâng cao.</td></tr>
                   <tr id=E><td><a href="eval.ex.html">EVAL.EX</a></td><td>Tương tự hàm EVAL nhưng hô trợ tính toán với các hàm nâng cao.</td></tr>
@@ -559,7 +559,7 @@
                   <tr id=N><td><a href="nil.html">NIL</a></td><td>Trả về giá trị rỗng.</td></tr>
                   <tr id=N><td><a href="no.html">NO</a></td><td>Đánh số thứ tự mảng theo chiều ngang hoặc dọc.</td></tr>
                   <tr id=N><td><a href="nonblanks.html">NONBLANKS</a></td><td>Trả về danh sách gồm các phần tử không chứa rỗng.</td></tr>
-                  <tr id=N><td><a href="nonblanks.ex.html">NONBLANKS.EX</a></td><td>Trả về danh sách gồm các phần tử không chứa rỗng hoặc chuỗi trống.</td></tr>
+                  <tr id=N><td><a href="nonblanks.ex.html">NONBLANKS.EX</a></td><td>Trả về danh sách gồm các phần tử không chứa rỗng và chuỗi trống.</td></tr>
                   <tr id=N><td><a href="nonerrors.html">NONERRORS</a></td><td>Trả về danh sách gồm các phần tử khác ERROR.</td></tr>
                   <tr id=N><td><a href="nonzeros.html">NONZEROS</a></td><td>Trả về danh sách gồm các phần tử khác 0 và không chứa rỗng.</td></tr>
                   <tr id=N><td><a href="numbertowords.html">NUMBERTOWORDS</a></td><td>Chuyển đổi tiền tệ sang chữ. (Đọc số thành chữ)</td></tr>
@@ -584,16 +584,17 @@
                   <tr id=R><td><a href="regexreplace.html">REGEXREPLACE</a></td><td>Tương tự hàm REGEXREPLACE trên #Google-sheets.</td></tr>
                   <tr id=R><td><a href="regexsplit.html">REGEXSPLIT</a></td><td>Phân tách chuỗi con bằng cách sử dụng công nghệ #RegEx.</td></tr>
                   <tr id=R><td><a href="removedown.html">REMOVEDOWN</a></td><td>Hàm đối nghịch với hàm FILLDOWN.</td></tr>
-                  <tr id=R><td><a href="repeat.html">REPEAT</a></td><td>Hàm đối nghịch với hàm REMOVEIF.W</td></tr>
-                  <tr id=R><td><a href="repeat.n.html">REPEAT.N</a></td><td>Hàm nhân bản từng hàng/cột với số lượng chỉ định.</td></tr>
-                  <tr id=R><td><a href="replace.html">REPLACE</a></td><td>Hàm tạo mảng số nhân bản tăng dần chính bằng giá trị của nó.</td></tr>
-                  <tr id=R><td><a href="replace.1st.html">REPLACE.1ST</a></td><td>Thay thế hàng hoặc cột trong mảng bằng hàng hoặc cột chỉ định.</td></tr>
-                  <tr id=R><td><a href="replace.c.html">REPLACE.C</a></td><td>Hàm thay thế chuỗi tại vị trí xuất hiện đầu tiên nếu tìm thấy.</td></tr>
-                  <tr id=R><td><a href="replace.not.c.html">REPLACE.NOT.C</a></td><td>Thay thế hàng hoặc cột trong mảng bằng hàng hoặc cột chỉ định.</td></tr>
-                  <tr id=R><td><a href="replace.w.html">REPLACE.W</a></td><td>Thay thế mảng ký tự cũ bằng mảng ký tự mới trong toàn bộ chuỗi hoặc phần chuỗi con chỉ định.</td></tr>
-                  <tr id=R><td><a href="replaceif.html">REPLACEIF</a></td><td>Hàm mở rộng của hàm SUBSTITUTE.</td></tr>
-                  <tr id=R><td><a href="replaceif.c.html">REPLACEIF.C</a></td><td>Thay thế hàng, cột trong một mảng dựa theo điều kiện chỉ định.</td></tr>
-                  <tr id=R><td><a href="rept.html">REPT</a></td><td>Hàm nhân bản toàn bộ theo phương ngang/dọc với số lượng chỉ định.</td></tr>
+                  <tr id=R><td><a href="repeat.html">REPEAT</a></td><td>Hàm nhân bản từng hàng/cột với số lượng chỉ định.</td></tr>
+                  <tr id=R><td><a href="repeat.n.html">REPEAT.N</a></td><td>Hàm tạo mảng số nhân bản tăng dần chính bằng giá trị của nó.</td></tr>
+                  <tr id=R><td><a href="replace.html">REPLACE</a></td><td>Thay thế hàng hoặc cột trong mảng bằng hàng hoặc cột chỉ định.</td></tr>
+                  <tr id=R><td><a href="replace.w.html">REPLACE.W</a></td><td>Hàm mở rộng của hàm SUBSTITUTE.</td></tr>
+                  <tr id=R><td><a href="replaceif.html">REPLACEIF</a></td><td>Thay thế hàng hoặc cột thỏa mãn điều kiện [ARRAY] trong mảng.</td></tr>
+                  <tr id=R><td><a href="replaceif.c.html">REPLACEIF.C</a></td><td>Thay thế ký tự thỏa mãn điều kiện [ARRAY] trong mảng.</td></tr>
+                  <tr id=R><td><a href="replacen.c.html">REPLACEN.C</a></td><td>Thay thế ký tự được chỉ định bằng chuỗi mới theo phân đoạn.</td></tr>
+                  <tr id=R><td><a href="replacen.not.c.html">REPLACEN.NOT.C</a></td><td>Thay thế ký tự không được chỉ định bằng chuỗi mới theo phân đoạn.</td></tr>
+                  <tr id=R><td><a href="replacenif.c.html">REPLACENIF.C</a></td><td>Thay thế ký tự thỏa mãn điều kiện [BYTE] trong chuỗi.</td></tr>
+                  <tr id=R><td><a href="replacenif.not.c.html">REPLACENIF.NOT.C</a></td><td>Thay thế ký tự không thỏa mãn điều kiện [BYTE] trong chuỗi.</td></tr>
+                  <tr id=R><td><a href="rept.html">REPT</a></td><td>Hàm nhân bản mảng theo số lượng trục dọc/ngang.</td></tr>
                   <tr id=R><td><a href="reverse.html">REVERSE</a></td><td>Hàm đảo ngược mảng.</td></tr>
                   <tr id=R><td><a href="reverse.c.html">REVERSE.C</a></td><td>Tương tự hàm REVERSE. (Áp dụng với chuỗi)</td></tr>
                   <tr id=R><td><a href="reverse.w.html">REVERSE.W</a></td><td>Hàm đảo ngược vị trí xuất hiện của từ.</td></tr>
@@ -603,11 +604,11 @@
                   <tr id=S><td><a href="seal.html">SEAL</a></td><td>Ngăn chặn các hàm bay hơi tính toán lại (tạm thời).</td></tr>
                   <tr id=S><td><a href="sentence.html">SENTENCE</a></td><td>Hàm viết hoa chỉ ký tự đầu tiên.</td></tr>
                   <tr id=S><td><a href="sequence.html">SEQUENCE</a></td><td><img src="https://support.content.office.net/en-us/media/8f5fa894-48e1-47bc-a16b-6d4e8b42aba9.png" alt="Office 365 button" loading="lazy"></td></tr>
-                  <tr id=S><td><a href="series.html">SERIES</a></td><td>Trả về danh sách số hoặc ký tự nằm giữa 2 ranh giới.</td></tr>
+                  <tr id=S><td><a href="series.html">SERIES</a></td><td>Trả về danh sách số hoặc ký tự nằm giữa 2 ranh giới. (Vd: "A-G")</td></tr>
                   <tr id=S><td><a href="series.count.html">SERIES.COUNT</a></td><td>Đếm số lượng các số trong một giới hạn từ một chuỗi. (Vd: "2-5")</td></tr>
-                  <tr id=S><td><a href="series.isbetween.html">SERIES.ISBETWEEN</a></td><td>Kiểm tra một số nằm giữa 2 giới hạn từ một chuỗi. (Vd: "2-5")</td></tr>
-                  <tr id=S><td><a href="series.max.html">SERIES.MAX</a></td><td>Trả về giá trị lớn nhất trong một giới hạn từ một chuỗi. (Vd: "2-5")</td></tr>
-                  <tr id=S><td><a href="series.min.html">SERIES.MIN</a></td><td>Trả về giá trị nhỏ nhất trong một giới hạn từ một chuỗi. (Vd: "2-5")</td></tr>
+                  <tr id=S><td><a href="series.isbetween.html">SERIES.ISBETWEEN</a></td><td>Kiểm tra một số nằm giữa 2 giới hạn chuỗi. (Vd: "2-5")</td></tr>
+                  <tr id=S><td><a href="series.max.html">SERIES.MAX</a></td><td>Trả về giá trị lớn nhất trong một giới hạn chuỗi. (Vd: "2-5")</td></tr>
+                  <tr id=S><td><a href="series.min.html">SERIES.MIN</a></td><td>Trả về giá trị nhỏ nhất trong một giới hạn chuỗi. (Vd: "2-5")</td></tr>
                   <tr id=S><td><a href="slide.html">SLIDE</a></td><td>Trả về bộ phần tử liền kề tịnh tiến với kích thước chỉ định.</td></tr>
                   <tr id=S><td><a href="slide.w.html">SLIDE.W</a></td><td>Tương tự hàm SLIDE. (Áp dụng với chuỗi)</td></tr>
                   <tr id=S><td><a href="small.html">SMALL</a></td><td>Trả về vị trí của K giá trị nhỏ nhất trong mảng.</td></tr>
@@ -654,14 +655,14 @@
                   <tr id=T><td><a href="text.only.html">TEXT.ONLY</a></td><td>Trả về các chuỗi văn bản (alphabet) xuất hiện trong chuỗi.</td></tr>
                   <tr id=T><td><a href="text.times.html">TEXT.TIMES</a></td><td>Trích xuất hoặc kiểm tra các chuỗi con có định dạng thời gian từ chuỗi chỉ định</td></tr>
                   <tr id=T><td><a href="text.w.html">TEXT.W</a></td><td>Định dạng văn bản theo tập giá trị cho trước.</td></tr>
-                  <tr id=T><td><a href="text2degree.html">TEXT2DEGREE</a></td><td>Chuyển đổi văn bản sang độ.</td></tr>
-                  <tr id=T><td><a href="textafter.html">TEXTAFTER</a></td><td><img src="https://support.content.office.net/en-us/media/8f5fa894-48e1-47bc-a16b-6d4e8b42aba9.png" alt="Office 365 button" loading="lazy"></td></tr>
+                  <tr id=T><td><a href="textafter.html">TEXTAFTER</a></td><td>Chuyển đổi văn bản sang độ.</td></tr>
                   <tr id=T><td><a href="textbefore.html">TEXTBEFORE</a></td><td><img src="https://support.content.office.net/en-us/media/8f5fa894-48e1-47bc-a16b-6d4e8b42aba9.png" alt="Office 365 button" loading="lazy"></td></tr>
-                  <tr id=T><td><a href="textcompare.html">TEXTCOMPARE</a></td><td>So sánh 2 chuỗi.</td></tr>
-                  <tr id=T><td><a href="textif.html">TEXTIF</a></td><td>Lọc chuỗi con với dấu phân tách theo điều kiện xác định.</td></tr>
-                  <tr id=T><td><a href="textifs.html">TEXTIFS</a></td><td>Lọc chuỗi con với dấu phân tách theo nhiều điều kiện xác định.</td></tr>
-                  <tr id=T><td><a href="textsplit.html">TEXTSPLIT</a></td><td><img src="https://support.content.office.net/en-us/media/8f5fa894-48e1-47bc-a16b-6d4e8b42aba9.png" alt="Office 365 button" loading="lazy"></td></tr>
-                  <tr id=T><td><a href="textsplit.c.html">TEXTSPLIT.C</a></td><td>Tương tự hàm TEXTSPLIT (Áp dụng với CHAR).</td></tr>
+                  <tr id=T><td><a href="textcompare.html">TEXTCOMPARE</a></td><td><img src="https://support.content.office.net/en-us/media/8f5fa894-48e1-47bc-a16b-6d4e8b42aba9.png" alt="Office 365 button" loading="lazy"></td></tr>
+                  <tr id=T><td><a href="textif.html">TEXTIF</a></td><td>So sánh 2 chuỗi.</td></tr>
+                  <tr id=T><td><a href="textifs.html">TEXTIFS</a></td><td>Lọc chuỗi con với dấu phân tách theo điều kiện xác định.</td></tr>
+                  <tr id=T><td><a href="textsplit.html">TEXTSPLIT</a></td><td>Lọc chuỗi con với dấu phân tách theo nhiều điều kiện xác định.</td></tr>
+                  <tr id=T><td><a href="textsplit.c.html">TEXTSPLIT.C</a></td><td><img src="https://support.content.office.net/en-us/media/8f5fa894-48e1-47bc-a16b-6d4e8b42aba9.png" alt="Office 365 button" loading="lazy"></td></tr>
+                  <tr id=T><td><a href="texttodegree.html">TEXTTODEGREE</a></td><td>Tương tự hàm TEXTSPLIT (Áp dụng với CHAR).</td></tr>
                   <tr id=T><td><a href="theme.color.html">THEME.COLOR</a></td><td>Private function.</td></tr>
                   <tr id=T><td><a href="tocol.html">TOCOL</a></td><td><img src="https://support.content.office.net/en-us/media/8f5fa894-48e1-47bc-a16b-6d4e8b42aba9.png" alt="Office 365 button" loading="lazy"></td></tr>
                   <tr id=T><td><a href="topjoin.html">TOPJOIN</a></td><td>Tương tự hàm LEFTJOIN. (áp dụng cho phần tiêu đề)</td></tr>
@@ -709,7 +710,7 @@
                   <tr id=Y><td><a href="year.add.html">YEAR.ADD</a></td><td>Trả về ngày tháng kể từ ngày được chọn sau số năm xác định.</td></tr>
                   <tr id=Y><td><a href="year.fill.html">YEAR.FILL</a></td><td>Trả về danh sách các ngày có cùng ngày tháng với số năm tăng dần giữa 2 ngày chỉ định</td></tr>
                   <tr id=Y><td><a href="year.fill.n.html">YEAR.FILL.N</a></td><td>Trả về danh sách các ngày có cùng ngày tháng với số năm tăng dần xác định.</td></tr>
-                     
+                                    
 
 
                   <tr>
