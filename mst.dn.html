@@ -14,7 +14,7 @@
     </h1>
 
     <p>
-    <div>Hàm hỗ trợ tra cứu MST (quét MST từ các website, cơ sở dữ liệu) dành cho doanh nghiệp. </div>
+    <div>Hàm hỗ trợ tra cứu MST dành cho doanh nghiệp. </div>
     </p>
 
     <img src="gif/mst.dn.png">
@@ -32,18 +32,19 @@
      </p>
      <blockquote>
         <p>&nbsp;Để sử dụng hàm, bạn cần cài đặt bộ cài [AUExpress_WebTools.exe]</p>
-        <p>&nbsp;1. Nếu hàm không hoạt động, sử dụng hàm chính MST thay thế. Các thông tin được trả về như ảnh.</p>
-        <p>&nbsp;2. Hàm gồm 3 tham số, tham số thứ 2 [option] =(0) tự động | =(1) MST | =(2) Tên DN.</p>
+        <p>&nbsp;1. Hàm sẽ quét CSDL của AU trước tiên, nếu không thành công tiếp tục quét CSDL, Website khác để tìm kiếm.
+        <p>&nbsp;2. Nếu hàm không hoạt động, sử dụng hàm chính MST thay thế. Các thông tin được trả về như ảnh.</p>
+        <p>&nbsp;3. Hàm gồm 3 tham số, tham số thứ 2 [option] =(0) tự động | =(1) MST | =(2) Tên DN.</p>
         <p>&nbsp;VD: =MST(A1:A10,1) sẽ tra cứu thông tin DN theo MST.</p>
-        <p>&nbsp;2. Tham số thứ 3 [branch] =(0) chỉ tìm kiếm chính nó | =(1) tìm kiếm thêm chi nhánh.</p>
-        <p>&nbsp;VD: =MST(A1:A10,1,1) sẽ tra cứu thông tin DN và các chi nhánh của nó theo MST.</p>
-        <p>&nbsp;3. Nếu muốn hiển thị gợi ý hàm, bạn cần cài đặt [AUExpress_Tools.exe] #Add-in. Nếu không bạn cần nhớ các tham số hàm.</p>
-        <p>&nbsp;4. Trước khi sử dụng, hãy đảm bảo tốc độ internet ổn định bằng cách load thử web (face, youtube ,..) nhằm
+        <p>&nbsp;VD: =MST(A1:A10,1,1) sẽ tra cứu thông tin DN theo MST và các chi nhánh của nó.</p>
+        <p>&nbsp;4. Nếu muốn hiển thị gợi ý hàm, bạn cần cài đặt [AUExpress_Tools.exe] #Add-in. Nếu không bạn cần nhớ các tham số hàm.</p>
+        <p>&nbsp;5. Trước khi sử dụng, hãy đảm bảo tốc độ internet ổn định bằng cách load thử web (face, youtube ,..) nhằm
             tránh tình trạng phản hồi chậm.</p>
-        <p>&nbsp;5. Trong trường hợp xấu, một mã có thể mất vài giây tìm kiếm.</p>
-        <p>&nbsp;6. Sau khi dùng hàm, bạn đọc kiểm chứng bằng cách so sánh kết quả với mã tra cứu chính thức từ Tổng cục
+        <p>&nbsp;6. Trong trường hợp xấu, một mã có thể mất vài giây tìm kiếm.</p>
+        <p>&nbsp;8. Sau khi dùng hàm, bạn đọc kiểm chứng bằng cách so sánh kết quả với mã tra cứu chính thức từ Tổng cục
             để áp dụng vào công việc.</p>
-        <p>&nbsp;7. Thời gian chờ cho mỗi lần quét thất bại là 30s, nếu tìm thấy hàm trả về tất cả các kết quả .</p>
+        <p>&nbsp;8. Thời gian chờ cho mỗi lần quét thất bại là 30s, nếu tìm thấy hàm trả về tất cả các kết quả .</p>
+        <p>&nbsp;9. Trên phiên bản <= Excel2019, sử dụng hàm bao =ARRAY(MST(A1:A10,2)) để trả về mảng .</p>
     </blockquote>
 
 

@@ -32,16 +32,17 @@
      </p>
     <blockquote>
         <p>&nbsp;1. Các thông tin trả về gồm 6 thành phần như ảnh phía trên.</p>
-        <p>&nbsp;Hàm sẽ quét CSDL của AU trước tiên, nếu không thành công tiếp tục quét CSDL, Website khác để tìm kiếm.
-        <p>&nbsp;2. Hàm gồm 2 tham số, có thể chỉ định tham số thứ 2 [option]= (0) tự động | (1) MST | (2) CMND/CCCD.</p>
+        <p>&nbsp;2. Hàm sẽ quét CSDL của AU trước tiên, nếu không thành công tiếp tục quét CSDL, Website khác để tìm kiếm.
+        <p>&nbsp;3. Hàm gồm 2 tham số, có thể chỉ định tham số thứ 2 [option]= (0) tự động | (1) MST | (2) CMND/CCCD.</p>
         <p>&nbsp;VD: =MST(A1:A10,2) sẽ tra cứu thông tin theo CMND/CCCD.</p>
-        <p>&nbsp;3. Nếu muốn hiển thị gợi ý hàm, bạn cần cài đặt [AUExpress_Tools.exe] #Add-in. Nếu không bạn chỉ cần nhớ các tham số hàm.</p>
-        <p>&nbsp;4. Trước khi sử dụng, hãy đảm bảo tốc độ internet ổn định bằng cách load thử một số trang web (face, youtube ,..) nhằm
+        <p>&nbsp;4. Nếu muốn hiển thị gợi ý hàm, bạn cần cài đặt [AUExpress_Tools.exe] #Add-in. Nếu không bạn chỉ cần nhớ các tham số hàm.</p>
+        <p>&nbsp;5. Trước khi sử dụng, hãy đảm bảo tốc độ internet ổn định bằng cách load thử một số trang web (face, youtube ,..) nhằm
             tránh tình trạng phản hồi chậm.</p>
-        <p>&nbsp;5. Trong trường hợp xấu, một mã có thể mất vài giây tìm kiếm.</p>
-        <p>&nbsp;6. Sau khi dùng hàm, bạn đọc kiểm chứng bằng cách so sánh kết quả với mã tra cứu chính thức từ Tổng cục
+        <p>&nbsp;6. Trong trường hợp xấu, một mã có thể mất vài giây tìm kiếm.</p>
+        <p>&nbsp;7. Sau khi dùng hàm, bạn đọc kiểm chứng bằng cách so sánh kết quả với mã tra cứu chính thức từ Tổng cục
             để áp dụng vào công việc.</p>
-        <p>&nbsp;7. Thời gian chờ cho mỗi lần quét thất bại là 30s, nếu tìm thấy hàm trả về tất cả các kết quả .</p>
+        <p>&nbsp;8. Thời gian chờ cho mỗi lần quét thất bại là 30s, nếu tìm thấy hàm trả về tất cả các kết quả .</p>
+        <p>&nbsp;9. Trên phiên bản <= Excel2019, sử dụng hàm bao =ARRAY(MST(A1:A10,2)) để trả về mảng .</p>
     </blockquote>
 
 
