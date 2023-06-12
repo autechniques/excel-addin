@@ -1,43 +1,56 @@
 <!-- 850*360 -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>EMAIL.SEND</title>
-    <link rel="stylesheet" type="text/css" href="function/code-inner.css">
-    <link rel="stylesheet" type="text/css" href="function/macros.css">
-    </head>
-    <body>
-    <h1 >EMAIL.SEND function
-     <a href="interface.html"><button class="button button4" style="float: right;"><b>Download</b></button></a>
-    </h1>
-    <p>
-        <hr style="height:1px;border-width:0;color:lightgray;background-color:lightgray">
-      </p>
-    <p><div>Hàm thực thi chương trình gửi mail hàng loạt (Gửi đến nhiều người, nhiều file đính kèm đồng thời, hỗ trợ định dạng HTML).</div></p>
-    
-    <img src="gif/email.send.png">
+<html>
 
-    <blockquote>
-        <p>&nbsp;Trước khi sử dụng hàm này hãy đọc hàm EMAIL.REGISTER (trước hết cần tạo sẵn tài khoản ứng dụng gồm user & password từ cài đặt tài khoản Google của bạn).</p>
-        <p>&nbsp;Nếu muốn gửi thư tiêu chuẩn, bạn nên gọi các hàm này thông qua VBA, sử dụng các vòng lặp để gửi MAIL.</p>
-        <p>&nbsp;1. Hàm có nhiều tham số, bạn đọc chủ yếu quan tâm tham số [mail_content] và [format].</p>
-        <p>&nbsp;2. Nội dung thư càng lớn, hoặc nhiều kiểu định dạng hoặc nhiều files đính kèm ảnh hưởng một phần tới thời gian gửi thư.</p>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>EMAIL.SEND</title>
+  <link rel="stylesheet" type="text/css" href="function/code-inner.css">
+  <link rel="stylesheet" type="text/css" href="function/macros.css">
+</head>
 
-        <p>&nbsp;⚊ Nếu tham số [format]=0: mail thuần text (không có định dạng bảng, màu sắc) cho tốc độ gửi nhanh nhất.</p>
-        <p>&nbsp;⚊ Nếu tham số [format]=1: gửi thư dưới dạng HTML hỗ trợ màu sắc, font, định dạng khung viền bảng cho nội dung thư trực quan và chuyên nghiệp.</p>
-        <p>&nbsp;⚊ Nếu tham số [format]=2: cho phép nhúng hình ảnh trực tiếp vào thư. (ví dụ chữ ký, logo,..).</p>
+<body>
+  <h1>EMAIL.SEND function
+    <a href="interface.html"><button class="button button4" style="float: right;"><b>Download</b></button></a>
+  </h1>
+  <p>
+  <div>Hàm thực thi chương trình gửi mail hàng loạt (Gửi đến nhiều người, nhiều file đính kèm đồng thời, hỗ trợ định
+    dạng HTML).</div>
+  </p>
+  <p>
+    <hr style="height:1px;border-width:0;color:lightgray;background-color:lightgray">
+  </p>
+  <blockquote>
+    <p>&nbsp;Trước khi sử dụng hàm này hãy đọc hàm EMAIL.REGISTER (tạo tài khoản ứng dụng từ tài khoản Google của bạn).</p>
+  </blockquote>
+  <img src="gif/email.send.png">
 
-        <p>&nbsp;Lưu ý: quá trình soạn thư HTML nên gửi và xem trước thư để đảm bảo đúng định dạng đã soạn thảo.</p>
-        <p>&nbsp;3. Để tránh gửi thư vào mục spam, google để biết các quy cách gửi thư để tránh bị liệt kê vào mục spam.</p>
-        <p>&nbsp;4. Số lượng mail trong mỗi lần gửi và số lượng tin được gửi trong ngày phụ thuộc loại tài khoản mail.</p>
-        <p>&nbsp;5. Sau khi sử dụng xong chương trình, gọi hàm EMAIL.UNREGISTER để dừng kết nối.</p>
-        <p>&nbsp;6. Một hàm cho phép gửi 1 loại mail tới nhiều người, như vậy với FILL DOWN nhiều hàm, bạn gửi tới hàng loại người.</p>
-    </blockquote>
-    
-    <p><strong>Related function</strong></p>
-    <p>
-    <a href="email.register.html">EMAIL.REGISTER</a>&nbsp;&nbsp;&nbsp;Kết nối ứng dụng mail (Áp dụng với tài khoản gmail hoặc outlook).
-    </p>
-    
-    <p>Return to <a href="index.html">Home</a></p>
-    
-    </body></html>
-    
+  <blockquote>
+    <p>&nbsp;Nếu muốn gửi thư tiêu chuẩn, bạn nên gọi các hàm này thông qua VBA, sử dụng các vòng lặp để gửi MAIL.</p>
+    <p>&nbsp;1. Hàm có nhiều tham số, bạn đọc chủ yếu quan tâm tham số [mail_content] và [format].</p>
+    <p>&nbsp;2. Nội dung thư càng lớn, hoặc nhiều kiểu định dạng hoặc nhiều files đính kèm ảnh hưởng một phần tới thời
+      gian gửi thư.</p>
+
+    <p>&nbsp;⚊ Nếu tham số [format]=0: mail thuần text (không có định dạng bảng, màu sắc) cho tốc độ gửi nhanh nhất.</p>
+    <p>&nbsp;⚊ Nếu tham số [format]=1: gửi thư dưới dạng HTML hỗ trợ màu sắc, font, định dạng khung viền bảng cho nội
+      dung thư trực quan và chuyên nghiệp.</p>
+    <p>&nbsp;⚊ Nếu tham số [format]=2: cho phép nhúng hình ảnh trực tiếp vào thư. (ví dụ chữ ký, logo,..).</p>
+
+    <p>&nbsp;Lưu ý: quá trình soạn thư HTML nên gửi demo và xem trước kết quả mẫu để đảm bảo thư gửi đi đúng định dạng đã soạn thảo.</p>
+    <p>&nbsp;3. Để tránh gửi thư vào mục spam, google để biết các quy cách gửi thư để tránh bị liệt kê vào mục spam.</p>
+    <p>&nbsp;4. Số lượng mail trong mỗi lần gửi và số lượng tin được gửi trong ngày phụ thuộc loại tài khoản mail.</p>
+    <p>&nbsp;5. Sau khi sử dụng xong chương trình, gọi hàm EMAIL.UNREGISTER để dừng kết nối.</p>
+    <p>&nbsp;6. Một hàm cho phép gửi 1 loại mail tới nhiều người, như vậy với FILL DOWN nhiều hàm, bạn gửi tới hàng loại
+      người.</p>
+  </blockquote>
+
+  <p><strong>Related function</strong></p>
+  <p>
+    <a href="email.register.html">EMAIL.REGISTER</a>&nbsp;&nbsp;&nbsp;Kết nối ứng dụng mail (Áp dụng với tài khoản gmail
+    hoặc outlook).
+  </p>
+
+  <p>Return to <a href="index.html">Home</a></p>
+
+</body>
+
+</html>
