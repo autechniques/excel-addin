@@ -56,12 +56,34 @@
                  d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">
               </path>
            </svg>
+           <font style="vertical-align: inherit;">Cú pháp:</font>
+        </note>
+     </p>
+     <blockquote>
+      <p style="white-space: pre-line">=XGROUP.\AU(array, [has_header], colsgroup_index, [declare_variable], [cols_index], [func_name],..)
+        - array             : mảng tham chiếu.
+        - has_header        : chỉ rõ vùng chứa header hoặc không?.
+        - colsgroup_index   : danh sách vị trí cột phân nhóm.
+        - declare_variable  : khai báo các biến phụ thuộc.
+        - cols_index        : vị trí cột cần tính toán.
+        - func_name         : công thức tùy chỉnh áp dụng cho cột đó (hỗ trợ các hàm tùy chỉnh nâng cao - xem danh sách phía dưới).
+      </p>
+    </blockquote>
+
+    <p tabindex="-1" dir="auto">
+        <note>
+           <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+              aria-hidden="true">
+              <path
+                 d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">
+              </path>
+           </svg>
            <font style="vertical-align: inherit;">Chú ý:</font>
         </note>
      </p>
      <blockquote>
-        <p style="white-space: pre-line">- Khai báo các biến lần lượt theo thứ tự xuất hiện (vd: v3=v1+v2 thì cần khai báo các biến v1,v2 trước v3).
-          - Danh sách biến có thể khai báo dạng mảng thay vì chuỗi.
+        <p style="white-space: pre-line">- Nếu sử dụng biến phụ, cần khai báo các biến lần lượt theo thứ tự tính toán (vd: v3=v1+v2 thì cần khai báo các biến v1,v2 trước v3).
+          - Danh sách biến có thể khai báo dạng mảng thay vì chuỗi ({"v1=c1","v2=2*c2","v3=v1+v2"} hoặc "v1=c1;v2=2*c2;v3=v1+v2").
           - Hàm thường được sử dụng khi việc tính toán có mối liên hệ qua lại giữa các cột do đó yêu cầu cú pháp chặt chẽ hơn so với hàm GROUP.
           - Hỗ trợ nhiều hàm nâng cao hơn so với hàm GROUP.
           - Để hiểu cách sử dụng hàm xem thêm các file ví dụ mẫu .xlsx từ DROPBOX.
