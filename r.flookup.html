@@ -40,13 +40,38 @@
 
    
     <blockquote>
-        <p>&nbsp; So với các hàm Excel, tính năng này có thể lọc các điều kiện trên một hoặc nhiều cột đồng thời khá đơn giản.</p>
-        <p>&nbsp; Các thiết lập này chỉ áp dụng trong mỗi phiên Excel (không lưu nguồn).</p>
+        <p>&nbsp; So với công thức Excel khá phức tạp, tính năng này có thể lọc các điều kiện trên một hoặc nhiều cột đồng thời.</p>
+        <p>&nbsp; Các thiết lập này chỉ áp dụng trong mỗi phiên mở Excel (không lưu nguồn).</p>
         <p>&nbsp; Để xóa toàn bộ thiết lập và ngưng kích hoạt, chọn ResetDB.</p>
         <p>&nbsp; Xem hướng dẫn video <a href="https://www.youtube.com/watch?v=rP-DHJ6PRLg&ab_channel=XOffice"
             style="color: #ea0606;text-decoration:underline"">Demo</a> (phiên bản 10.1.6).</p>
     </blockquote>
 
+    <blockquote>
+        <p>&nbsp;⚊ Demo thiết lập tra cứu bảng dữ liệu (trong 30s).</p>
+    </blockquote>
+    <img src="gif/r.flookup.demo.mp4">
+
+
+    <p tabindex="-1" dir="auto">
+        <note>
+           <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+              aria-hidden="true">
+              <path
+                 d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">
+              </path>
+           </svg>
+           <font style="vertical-align: inherit;">Lưu ý:</font>
+        </note>
+      </p>
+    
+      <blockquote>
+        <p>&nbsp;1.1 Đối với dữ liệu dạng Date hoặc Datetime, các chuỗi so sánh hợp lệ như sau:</p>
+        <p>&nbsp;&nbsp;3>=5/8/23 hoặc 3>=5/8/2023 hoặc 3>=45143 (lọc giá trị cột 3 sau ngày 5 tháng 8 năm 2023)
+        <p>&nbsp;1.2 Đối với dữ liệu dạng Time, chuyển giá trị đó về thập phân:</p>
+        <p>&nbsp;&nbsp;3>=0.520833333 ((lọc giá trị cột 3 sau 12 giờ 30 phút)) 
+        <p>&nbsp;2.0 Các công thức lọc đồng thời (sử dụng * và +) chưa hỗ trợ Regex. (chỉ áp dụng Regex đơn cho một hoặc nhiều cột)</p>
+      </blockquote>
 
     <p><strong>Related function</strong></p>
 
