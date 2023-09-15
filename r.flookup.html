@@ -15,82 +15,102 @@
 
     <p>
     <div>● Chức năng nhập liệu nâng cao, hỗ trợ tra cứu (lọc) và xuất nhanh dữ liệu dựa trên từ khóa được gõ.</div>
-    <div style="white-space: pre-line">● So với AUTO.COMPLETE chỉ xuất dữ liệu trong 1 cột và thường dùng để gõ đoạn văn bản trong một ô,
+    <div style="white-space: pre-line">● So với AUTO.COMPLETE chỉ xuất dữ liệu trong 1 cột và thường dùng để gõ đoạn văn
+        bản trong một ô,
         &nbsp;&nbsp; chức năng này hỗ trợ nhập, xuất nhiều cột, hàng đồng thời.</div>
     <div>● Sử dụng hộp thoại thiết lập FLOOKUP setting và hộp thoại nhập liệu INPUT.</div>
     </p>
 
     <p>
         <hr style="height:1px;border-width:0;color:#04AA6D;background-color:#04AA6D">
+    </p>
+
     <blockquote>
         <p>&nbsp;⚊ 1. Sau đây là ảnh mô tả các bước thiết lập hộp thoại FLOOKUP setting.</p>
     </blockquote>
+
     <img src="gif/r.flookup.png">
+
+    <p>
+        <hr style="height:1px;border-width:0;color:#04AA6D;background-color:#04AA6D">
+    </p>
+
     <blockquote>
         <p>&nbsp;⚊ 2. Sau khi thêm loạt quy tắc, chọn các quy tắc cần thiết và kích hoạt như ảnh.</p>
     </blockquote>
+
     <img src="gif/r.flookup-view.png">
 
     <p>
         <hr style="height:1px;border-width:0;color:#04AA6D;background-color:#04AA6D">
+    </p>
+
     <blockquote>
-        <p>&nbsp;⚊ 3. Hộp thoại INPUT sẽ tự động kích hoạt khi nhập liệu trong vùng xuất, dưới đây là các thành phần hộp thoại.</p>
+        <p>&nbsp;⚊ 3. Hộp thoại INPUT tự động kích hoạt khi nhập liệu trong vùng xuất, dưới đây là các thành phần hộp
+            thoại.</p>
     </blockquote>
+
     <img src="gif/r.flookup-input.png">
 
-   
+    <p>
+        <hr style="height:1px;border-width:0;color:#04AA6D;background-color:#04AA6D">
+    </p>
+
     <blockquote>
         <p>&nbsp; So với công thức Excel phức tạp, FLOOKUP cho phép lọc các điều kiện rất đơn giản và trực quan.</p>
         <p>&nbsp; Các thiết lập này chỉ áp dụng trong mỗi phiên mở Excel (không lưu nguồn).</p>
         <p>&nbsp; Để xóa toàn bộ thiết lập và ngưng kích hoạt, chọn ResetDB.</p>
         <p>&nbsp; Xem hướng dẫn video <a href="https://www.youtube.com/watch?v=rP-DHJ6PRLg&ab_channel=XOffice"
-            style="color: #ea0606;text-decoration:underline"">Demo</a> (phiên bản 10.1.6).</p>
+                style="color: #ea0606;text-decoration:underline"">Demo</a> (phiên bản 10.1.6).</p>
     </blockquote>
 
-    <video controls autoplay>
-        <source src="gif/r.flookup.demo.mp4" type="video/mp4">
-      </video>
+    <video controls autoplay> <source src=" gif/r.flookup.demo.mp4" type="video/mp4"> </video>
 
 
-    <p tabindex="-1" dir="auto">
-        <note>
-           <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
-              aria-hidden="true">
-              <path
-                 d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">
-              </path>
-           </svg>
-           <font style="vertical-align: inherit;">Lưu ý:</font>
-        </note>
-      </p>
-    
-      <blockquote>
-        <p>&nbsp;⚊ Đối với dữ liệu dạng Date hoặc Datetime, các chuỗi so sánh hợp lệ như sau:</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3>=5/8/23 hoặc 3>=5/8/2023 hoặc 3>=45143 (lọc giá trị cột 3 sau ngày 5 tháng 8 năm 2023)
-        <p>&nbsp;⚊ Đối với dữ liệu dạng Time, chuyển giá trị đó về thập phân:</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3>=0.520833333 ((lọc giá trị cột 3 sau 12 giờ 30 phút)) 
-        <p>&nbsp;⚊ Các công thức lọc đồng thời (sử dụng * và +) chưa hỗ trợ Regex. (chỉ áp dụng Regex đơn cho một hoặc nhiều cột)</p>
-      </blockquote>
+                <p tabindex="-1" dir="auto">
+                    <note>
+                        <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                            aria-hidden="true">
+                            <path
+                                d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">
+                            </path>
+                        </svg>
+                        <font style="vertical-align: inherit;">Lưu ý:</font>
+                    </note>
+                </p>
 
-    <p><strong>Related function</strong></p>
+                <blockquote>
+                    <p>&nbsp;⚊ Đối với dữ liệu dạng Date hoặc Datetime, các chuỗi so sánh hợp lệ như sau:</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3>=5/8/23 hoặc 3>=5/8/2023 hoặc 3>=45143 (lọc giá trị cột 3
+                        sau ngày 5 tháng 8 năm 2023)
+                    <p>&nbsp;⚊ Đối với dữ liệu dạng Time, chuyển giá trị đó về thập phân:</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3>=0.520833333 ((lọc giá trị cột 3 sau 12 giờ 30 phút))
+                    <p>&nbsp;⚊ Các công thức lọc đồng thời (sử dụng * và +) chưa hỗ trợ Regex. (chỉ áp dụng Regex đơn
+                        cho một hoặc nhiều cột)</p>
+                </blockquote>
 
-    <p>
-        <a href="r.numbertowords.html">NUMBERTOWORDS (feature)</a>&nbsp;&nbsp;&nbsp;Thiết lập phụ từ cho ứng dụng đọc số thành chữ (Ribbon).
-    </p>
+                <p><strong>Related function</strong></p>
 
-    <p>
-        <a href="groupby.html">GROUPBY</a>
-        &nbsp;&nbsp;&nbsp;Phân nhóm bảng dữ liệu dựa trên một mảng dữ liệu chỉ định, hỗ trợ tính toán tùy chỉnh.
-    </p>
-    <p>
-        <a href="xgroup.html">XGROUP</a>&nbsp;&nbsp;&nbsp;Hàm mở rộng của GROUP. (hỗ trợ các hàm nâng cao).
-    </p>
-    <p>
-        <a href="increase.adj.html">INCREASE.ADJ</a>&nbsp;&nbsp;&nbsp;Đánh số thứ tự tăng dần theo từng phân nhóm hoặc
-        phần
-        tử trong phân nhóm đó.
-    </p>
-    <p>Return to <a href="index.html">Home</a></p>
+                <p>
+                    <a href="r.numbertowords.html">NUMBERTOWORDS (feature)</a>&nbsp;&nbsp;&nbsp;Thiết lập phụ từ cho ứng
+                    dụng đọc số thành chữ (Ribbon).
+                </p>
+
+                <p>
+                    <a href="groupby.html">GROUPBY</a>
+                    &nbsp;&nbsp;&nbsp;Phân nhóm bảng dữ liệu dựa trên một mảng dữ liệu chỉ định, hỗ trợ tính toán tùy
+                    chỉnh.
+                </p>
+                <p>
+                    <a href="xgroup.html">XGROUP</a>&nbsp;&nbsp;&nbsp;Hàm mở rộng của GROUP. (hỗ trợ các hàm nâng cao).
+                </p>
+                <p>
+                    <a href="increase.adj.html">INCREASE.ADJ</a>&nbsp;&nbsp;&nbsp;Đánh số thứ tự tăng dần theo từng phân
+                    nhóm hoặc
+                    phần
+                    tử trong phân nhóm đó.
+                </p>
+                <p>Return to <a href="index.html">Home</a></p>
 
 
 

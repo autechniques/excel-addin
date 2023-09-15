@@ -1,49 +1,56 @@
 <!-- 850*360 -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>VLOOKUPS</title>
   <link rel="stylesheet" type="text/css" href="function/code-inner.css">
   <link rel="stylesheet" type="text/css" href="function/macros.css">
-  </head>
-  <body>
-  <h1 >VLOOKUPS function
-   <a href="interface.html"><button class="button button4" style="float: right;"><b>Download</b></button></a>
+</head>
+
+<body>
+  <h1>VLOOKUPS function
+    <a href="interface.html"><button class="button button4" style="float: right;"><b>Download</b></button></a>
   </h1>
-  
-  <p><div>Tìm kiếm theo nhiều điều kiện trên nhiều cột, trả về tất cả giá trị.</div></p>
+
+  <p>
+  <div>Tìm kiếm theo nhiều điều kiện trên nhiều cột, trả về tất cả giá trị.</div>
+  </p>
   <p>
     <hr style="height:1px;border-width:0;color:lightgray;background-color:lightgray">
-</p>
-<blockquote>
-  <p>&nbsp;VD1: Tìm kiếm theo 2 Điều kiện gồm Tên điện thoại: SAMSUNG và Giá thành: > 500$.</p>
-</blockquote>
+  </p>
+  <blockquote>
+    <p>&nbsp;VD1: Tìm kiếm theo 2 Điều kiện gồm Tên điện thoại: SAMSUNG và Giá thành: > 500$.</p>
+  </blockquote>
 
   <img src="gif/vlookups.gif">
- 
+
 
 
   <p>
     <hr style="height:1px;border-width:0;color:lightgray;background-color:lightgray">
-</p>
+  </p>
   <blockquote>
-    <p>&nbsp;VD2: Tìm kiếm theo 2 Điều kiện gồm Tên khách hàng và khoảng Thời gian. (file VLOOKUPS_140923.xlsx (Dropbox))</p>
-</blockquote>
+    <p>&nbsp;VD2: Tìm kiếm theo 2 Điều kiện gồm Tên khách hàng và khoảng Thời gian. (file VLOOKUPS_140923.xlsx
+      (Dropbox))</p>
+  </blockquote>
 
   <video controls autoplay>
     <source src="gif/vlookups 140923.mp4" type="video/mp4">
   </video>
 
-  <code class="language-xls"><span class="token operator">=</span><a class="token function" href="/functions/if-function">IF</a><span class="token punctuation">(</span><span class="token cell selector">J2</span><span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">,</span><span class="token string">""</span><span class="token punctuation">,</span><a class="token function" href="/functions/vlookups-function">VLOOKUPS</a><span class="token punctuation">(</span><span class="token range selector">A2:F250</span><span class="token punctuation">,</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token string">"*"</span><span class="token operator">&</span><span class="token cell selector">J2</span><span class="token operator">&</span><span class="token string">"*"</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token string">">="</span><span class="token operator">&</span><span class="token cell selector">J3</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token string">"<="</span><span class="token operator">&</span><span class="token cell selector">J4</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code>
+  <code
+    class="language-xls"><span class="token operator">=</span><a class="token function" href="/functions/if-function">IF</a><span class="token punctuation">(</span><span class="token cell selector">J2</span><span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">,</span><span class="token string">""</span><span class="token punctuation">,</span><a class="token function" href="/functions/vlookups-function">VLOOKUPS</a><span class="token punctuation">(</span><span class="token range selector">A2:F250</span><span class="token punctuation">,</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token string">"*"</span><span class="token operator">&</span><span class="token cell selector">J2</span><span class="token operator">&</span><span class="token string">"*"</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token string">">="</span><span class="token operator">&</span><span class="token cell selector">J3</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token string">"<="</span><span class="token operator">&</span><span class="token cell selector">J4</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code>
 
-  
+
   <p tabindex="-1" dir="auto">
     <note>
-       <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
-          aria-hidden="true">
-          <path
-             d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">
-          </path>
-       </svg>
-       <font style="vertical-align: inherit;">Lưu ý:</font>
+      <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+        <path
+          d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">
+        </path>
+      </svg>
+      <font style="vertical-align: inherit;">Lưu ý:</font>
     </note>
   </p>
 
@@ -53,13 +60,13 @@
     <p>&nbsp;3. Hỗ trợ nhiều bộ lọc bao gồm Wildcard, Operator, RegEx.</p>
   </blockquote>
   <p><strong>Related function</strong></p>
-  
-  <p>
-  <a href="vlookup.html">VLOOKUP</a>&nbsp;&nbsp;&nbsp;Tìm kiếm nhiều điều kiện trên một cột, trả về tất cả giá trị.
-  </p>
-  
-  <p>Return to <a href="index.html">Home</a></p>
-  
-  </body></html>
 
-    
+  <p>
+    <a href="vlookup.html">VLOOKUP</a>&nbsp;&nbsp;&nbsp;Tìm kiếm nhiều điều kiện trên một cột, trả về tất cả giá trị.
+  </p>
+
+  <p>Return to <a href="index.html">Home</a></p>
+
+</body>
+
+</html>
