@@ -15,9 +15,9 @@
 
     <p>
     <div>● Chức năng nhập liệu nâng cao, hỗ trợ tra cứu (lọc) và xuất nhanh dữ liệu dựa trên từ khóa được gõ.</div>
-    <div style="white-space: pre-line">● So với AUTO.COMPLETE chỉ xuất dữ liệu trong 1 cột và thường dùng để gõ đoạn văn bản trong một ô, chức năng này
-        &nbsp;&nbsp;hỗ trợ nhập và xuất nhiều cột nhiều hàng đồng thời.</div>
-    <div>● Chức năng này bao gồm 1 hộp thoại thiết lập FLOOKUP setting và 1 hộp thoại nhập liệu INPUT.</div>
+    <div style="white-space: pre-line">● So với AUTO.COMPLETE chỉ xuất dữ liệu trong 1 cột và thường dùng để gõ đoạn văn bản trong một ô,
+        &nbsp;&nbsp; chức năng này hỗ trợ nhập, xuất nhiều cột, hàng đồng thời.</div>
+    <div>● Sử dụng hộp thoại thiết lập FLOOKUP setting và hộp thoại nhập liệu INPUT.</div>
     </p>
 
     <p>
@@ -40,17 +40,16 @@
 
    
     <blockquote>
-        <p>&nbsp; So với công thức Excel khá phức tạp, tính năng này có thể lọc các điều kiện trên một hoặc nhiều cột đồng thời.</p>
+        <p>&nbsp; So với công thức Excel phức tạp, FLOOKUP cho phép lọc các điều kiện rất đơn giản và trực quan.</p>
         <p>&nbsp; Các thiết lập này chỉ áp dụng trong mỗi phiên mở Excel (không lưu nguồn).</p>
         <p>&nbsp; Để xóa toàn bộ thiết lập và ngưng kích hoạt, chọn ResetDB.</p>
         <p>&nbsp; Xem hướng dẫn video <a href="https://www.youtube.com/watch?v=rP-DHJ6PRLg&ab_channel=XOffice"
             style="color: #ea0606;text-decoration:underline"">Demo</a> (phiên bản 10.1.6).</p>
     </blockquote>
 
-    <blockquote>
-        <p>&nbsp;⚊ Demo thiết lập tra cứu bảng dữ liệu (trong 30s).</p>
-    </blockquote>
-    <img src="gif/r.flookup.demo.mp4">
+    <video controls autoplay>
+        <source src="gif/r.flookup.demo.mp4" type="video/mp4">
+      </video>
 
 
     <p tabindex="-1" dir="auto">
@@ -66,11 +65,11 @@
       </p>
     
       <blockquote>
-        <p>&nbsp;1.1 Đối với dữ liệu dạng Date hoặc Datetime, các chuỗi so sánh hợp lệ như sau:</p>
-        <p>&nbsp;&nbsp;3>=5/8/23 hoặc 3>=5/8/2023 hoặc 3>=45143 (lọc giá trị cột 3 sau ngày 5 tháng 8 năm 2023)
-        <p>&nbsp;1.2 Đối với dữ liệu dạng Time, chuyển giá trị đó về thập phân:</p>
-        <p>&nbsp;&nbsp;3>=0.520833333 ((lọc giá trị cột 3 sau 12 giờ 30 phút)) 
-        <p>&nbsp;2.0 Các công thức lọc đồng thời (sử dụng * và +) chưa hỗ trợ Regex. (chỉ áp dụng Regex đơn cho một hoặc nhiều cột)</p>
+        <p>&nbsp;⚊ Đối với dữ liệu dạng Date hoặc Datetime, các chuỗi so sánh hợp lệ như sau:</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3>=5/8/23 hoặc 3>=5/8/2023 hoặc 3>=45143 (lọc giá trị cột 3 sau ngày 5 tháng 8 năm 2023)
+        <p>&nbsp;⚊ Đối với dữ liệu dạng Time, chuyển giá trị đó về thập phân:</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3>=0.520833333 ((lọc giá trị cột 3 sau 12 giờ 30 phút)) 
+        <p>&nbsp;⚊ Các công thức lọc đồng thời (sử dụng * và +) chưa hỗ trợ Regex. (chỉ áp dụng Regex đơn cho một hoặc nhiều cột)</p>
       </blockquote>
 
     <p><strong>Related function</strong></p>
