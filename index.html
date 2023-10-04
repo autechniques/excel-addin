@@ -450,6 +450,7 @@
                   <tr id=E><td><a href="erase.html">ERASE</a></td><td>Xóa toàn bộ hàng cột được chỉ định trong mảng cho trước.</td></tr>
                   <tr id=E><td><a href="erase.dup.c.html">ERASE.DUP.C</a></td><td>Xóa các ký tự trùng lặp trong chuỗi cho trước.</td></tr>
                   <tr id=E><td><a href="erase.dup.w.html">ERASE.DUP.W</a></td><td>Xóa các từ trùng lặp trong chuỗi cho trước.</td></tr>
+                  <tr id=E><td><a href="eraseany.c.html">ERASEANY.C</a></td><td>Xóa bất kỳ ký tự nào trong chuỗi mẹ xuất hiện trong chuỗi chỉ định.</td></tr>
                   <tr id=E><td><a href="eraseif.html">ERASEIF</a></td><td>Xóa hàng, cột thỏa mãn điều kiện [ARRAY] trong mảng cho trước.</td></tr>
                   <tr id=E><td><a href="eraseif.c.html">ERASEIF.C</a></td><td>Xóa ký tự thỏa mãn điều kiện [ARRAY] trong mảng cho trước.</td></tr>
                   <tr id=E><td><a href="eraseif.not.w.html">ERASEIF.NOT.W</a></td><td>Xóa các từ không thỏa mãn điều kiện [OPERATOR] trong chuỗi.</td></tr>
@@ -487,9 +488,13 @@
                   <tr id=F><td><a href="find.c.html">FIND.C</a></td><td>Trả về các vị trí của chuỗi con trong chuỗi mẹ.</td></tr>
                   <tr id=F><td><a href="find.w.html">FIND.W</a></td><td>Trả về các vị trí của từ con trong chuỗi mẹ.</td></tr>
                   <tr id=F><td><a href="findfirst.html">FINDFIRST</a></td><td>Trả về vị trí xuất hiện đầu tiên của mảng 1 trong mảng 2.</td></tr>
+                  <tr id=F><td><a href="findfirst.of.w.html">FINDFIRST.OF.W</a></td><td>Tìm vị trí xuất hiện đầu tiên của ký tự thuộc chuỗi con trong chuỗi mẹ.</td></tr>
+                  <tr id=F><td><a href="findfirstnot.of.w.html">FINDFIRSTNOT.OF.W</a></td><td>Tìm vị trí ký tự đầu tiên của chuỗi mẹ nhưng không thuộc chuỗi con.</td></tr>
                   <tr id=F><td><a href="findif.w.html">FINDIF.W</a></td><td>Trả về vị trí các từ thỏa mãn điều kiện. (Mở rộng [OPERATOR])</td></tr>
                   <tr id=F><td><a href="findlast.html">FINDLAST</a></td><td>Trả về vị trí xuất hiện cuối cùng của phần tử 1 trong phần tử 2.</td></tr>
+                  <tr id=F><td><a href="findlast.of.w.html">FINDLAST.OF.W</a></td><td>Tìm vị trí xuất hiện cuối cùng của ký tự thuộc chuỗi con trong chuỗi mẹ.</td></tr>
                   <tr id=F><td><a href="findlast.w.html">FINDLAST.W</a></td><td>Tương tự hàm FINDLAST. (Áp dụng với chuỗi)</td></tr>
+                  <tr id=F><td><a href="findlastnot.of.w.html">FINDLASTNOT.OF.W</a></td><td>Tìm vị trí ký tự cuối cùng của chuỗi mẹ nhưng không thuộc chuỗi con.</td></tr>
                   <tr id=F><td><a href="finds.c.html">FINDS.C</a></td><td>Trả về các vị trí của các chuỗi con trong mảng chuỗi mẹ.</td></tr>
                   <tr id=F><td><a href="folder.html">FOLDER</a></td><td>Trả về danh sách đường dẫn thư mục con trong thư mục chỉ định. (Hỗ trợ hypelinks)</td></tr>
                   <tr id=F><td><a href="folder.create.html">FOLDER.CREATE</a></td><td>Tạo danh sách thư mục con trong thư mục cho trước theo nhiều cấp.</td></tr>
@@ -573,6 +578,7 @@
                   <tr id=L><td><a href="len.display.html">LEN.DISPLAY</a></td><td>Trả về độ dài hiển thị của chuỗi UTF-8.</td></tr>
                   <tr id=L><td><a href="length.html">LENGTH</a></td><td>Trả về kích thước mảng dữ liệu liên tục tính từ ô/vùng chỉ định.</td></tr>
                   <tr id=L><td><a href="let.html">LET</a></td><td><img src="https://support.content.office.net/en-us/media/8f5fa894-48e1-47bc-a16b-6d4e8b42aba9.png" alt="Office 365 button" loading="lazy"></td></tr>
+                  <tr id=L><td><a href="location.html">LOCATION</a></td><td>Trả về thông tin tỉnh, thành phố, huyện xuất hiện trong chuỗi văn bản.</td></tr>
                   <tr id=L><td><a href="lunar.html">LUNAR</a></td><td>Trả về lịch vạn niên âm dương của một năm bất kỳ.</td></tr>
                   <tr id=M><td><a href="makexml.html">MAKEXML</a></td><td>Tạo cú pháp chuỗi XML hợp lệ dùng hỗ trợ phân tích xpath</td></tr>
                   <tr id=M><td><a href="match.c.html">MATCH.C</a></td><td>Trả về vị trí của một cột trong mảng cho trước.</td></tr>
@@ -782,7 +788,7 @@
                   <tr id=Y><td><a href="year.add.html">YEAR.ADD</a></td><td>Trả về ngày tháng kể từ ngày được chọn sau số năm xác định.</td></tr>
                   <tr id=Y><td><a href="year.fill.html">YEAR.FILL</a></td><td>Trả về danh sách các ngày có cùng ngày tháng với số năm tăng dần giữa 2 ngày chỉ định</td></tr>
                   <tr id=Y><td><a href="year.fill.n.html">YEAR.FILL.N</a></td><td>Trả về danh sách các ngày có cùng ngày tháng với số năm tăng dần xác định.</td></tr>
-                   
+                             
                   
                   <tr>
                      <th>Ribbon Feature</th>
