@@ -44,6 +44,25 @@
 </blockquote>
   <img src="gif/reg.extract.bienso.png">
   
+  <p tabindex="-1" dir="auto">
+    <note>
+       <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+          aria-hidden="true">
+          <path
+             d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">
+          </path>
+       </svg>
+       <font style="vertical-align: inherit;">Lưu ý:</font>
+    </note>
+ </p>
+ <blockquote>
+  <p>&nbsp;1. Hàm này có rất nhiều biến thể được cung cấp nhưng chủ yếu 3 hàm chính gồm REG.EXTRACT.AU, REG.EXTRACT.\AU và REG.XEXTRACT.\AU</p>
+  <p>&nbsp;&nbsp;&nbsp;REG.EXTRACT.AU mặc định support unicode, hỗ trợ phân tách một số TEXT format thông dụng (bold,italic,..).</p>
+  <p>&nbsp;&nbsp;&nbsp;REG.EXTRACT.\AU có thể chỉ định giao diện khác nhau như PCRE, ECMA, REFLEX,.. và hỗ trợ nhiều chế độ khớp (xem đối số [reg_mode])</p>
+  <p>&nbsp;&nbsp;&nbsp;REG.XEXTRACT.\AU phiên bản mạnh nhất, cho phép chỉ định khớp thông thường hoặc khớp GROUP.</p>
+  <p>&nbsp;2. Khi chỉ định khớp GROUP, có thể tận dụng các nhóm không đặt tên (vd: "%(?:\s)(\d)") để chỉ định vị trí khớp dễ dàng hơn.</p>
+ </blockquote>
+
   <p><strong>Related function</strong></p>
   <p><a href="reg.replace.html">REGEXREPLACE</a>
     &nbsp;&nbsp;&nbsp;Thay thế chuỗi con dựa vào biểu thức chính quy (Regular Expression).
