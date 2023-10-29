@@ -14,9 +14,23 @@
 
     
     <blockquote>
-        <p>&nbsp;VD: Xác định tên xã (phường), tỉnh thành phố từ danh sách các chuỗi tại cột B:B</p>
+        <p>&nbsp;VD1: Xác định tên xã (phường), tỉnh thành phố từ danh sách các chuỗi tại cột B:B</p>
     </blockquote>
     <img src="gif/location.gif">
+
+    <blockquote>
+        <p>&nbsp;VD2: Các địa chỉ không cần sắp xếp theo thứ tự mà có thể bất kỳ.</p>
+        <p>&nbsp;Chẳng hạn: Hà Nội, P. Thanh trì -> trả về Phường Thanh Trì, Quận Hoàng Mai, Hà Nội.</p>
+    </blockquote>
+    <img src="gif/location.order.gif">
+
+    <blockquote>
+        <p>&nbsp;Điểm đặc biệt của tính năng này cũng bao gồm rà soát, sửa lỗi chính tả.</p>
+        <p>&nbsp;Yếu tố xác thực được ưu tiên từ đơn vị hành chính cao về thấp, lý do là các xã phường có thể trùng tên giữa các quận huyện.</p>
+        <p>&nbsp;Do đó nếu không tìm thấy đơn vị con sẽ được bỏ qua.</p>
+    </blockquote>
+    <img src="gif/location.validate.png">
+
 
     <p tabindex="-1" dir="auto">
         <note>
@@ -31,12 +45,12 @@
      </p>
     <blockquote>
         <p>&nbsp;1. Mặc định hàm tìm kiếm tên chính xác hoặc tên viết tắt (vd: HCM -> Hồ Chí Minh).</p>
-        <p>&nbsp;1. Nếu [ignore_signed]=1 Hàm cho phép tìm kiếm tên không dấu (vd: Ha Noi).</p>
+        <p>&nbsp;1. Nếu [ignore_signed]=1 Hàm cho phép tìm kiếm tên không dấu (vd: Ha Noi -> Hà Nội).</p>
         <p>&nbsp;2. Nếu [fuzzy]=1 Hàm cho phép tìm kiếm gần đúng với sai số cho phép không quá 2 ký tự (vd: Hà Chí Minh -> Hồ Chí Minh).</p>
-        <p>&nbsp;3. Có thể chỉ định luôn tên tỉnh/thành phố nếu biết trước.</p>
+        <p>&nbsp;3. Hãy chỉ định luôn tên tỉnh/thành phố nếu khu vực trích xuất xác định trong một khu vực.</p>
         <p>&nbsp;4. Có thể tra cứu bao gồm tên đường phố (đã cập nhật cho các tỉnh/thành phố lớn).</p>
         <p>&nbsp;5. Tên các đơn vị hành chính, đường phố có thể sáp nhập, tách mới hoặc đổi tên liên tục hàng năm, do đó khó có thể cập nhật được đầy đủ.</p>
-        <p>&nbsp;6. Trường hợp số liệu trả về chưa khớp, vui lòng report với fanpage/gmail để cập nhật số liệu mới cho đơn vị tỉnh thành đó.</p>
+        <p>&nbsp;6. Trường hợp số liệu trả về chưa khớp, vui lòng report với fanpage/gmail để cập nhật số liệu mới cho đơn vị tỉnh thành bạn cần.</p>
     </blockquote>
     
 
