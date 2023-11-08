@@ -4493,7 +4493,7 @@ pre {
     word-break: normal;
 }
 pre[class*=code]{
-
+    background-color: var(--color-muted-red-700);
     width:600;
 }
 @media (min-width:62rem) {
