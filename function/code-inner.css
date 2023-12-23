@@ -531,7 +531,7 @@ blockquote> :first-child {
 
 blockquote> :last-child {
     margin-bottom: 0;
-    line-height: 2;
+    
 }
 
 img {
@@ -4479,6 +4479,7 @@ pre.cke_widget_element,
 pre {
     background-color: rgb(255 255 255 / 85%);
     border-radius: 5px;
+    line-height: 2;
     clear: both;
     -webkit-hyphens: none;
     -ms-hyphens: none;
