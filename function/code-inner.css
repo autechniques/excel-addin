@@ -4468,7 +4468,7 @@ pre {
     font-weight: 500;
     letter-spacing: var(--lettter-spacing-l);
     line-height: var(--line-height-l);
-    color: var(--color-white);
+    color: #000000;
     overflow-wrap: break-word;
     text-shadow: none;
 }
@@ -4476,7 +4476,7 @@ pre {
 pre[class*=language-],
 pre.cke_widget_element,
 pre {
-    background-color: var(--color-black-850);
+    background-color: rgb(255 255 255 / 85%);
     border-radius: 5px;
     clear: both;
     -webkit-hyphens: none;
