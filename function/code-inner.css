@@ -531,6 +531,7 @@ blockquote> :first-child {
 
 blockquote> :last-child {
     margin-bottom: 0;
+    line-height: 2;
 }
 
 img {
