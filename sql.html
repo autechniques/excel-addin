@@ -1,0 +1,272 @@
+<!-- 900*360 -->
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>QUERY</title>
+  <link rel="stylesheet" type="text/css" href="function/code-inner.css">
+  <link rel="stylesheet" type="text/css" href="function/macros.css">
+</head>
+
+<body>
+  <h1>QUERY function
+     <a href="interface.html"><button class="button button4" style="float: right;"><b>Download</b></button></a>
+  </h1>
+
+  <p>
+  <div>● Truy vấn dữ liệu trên một bảng cố định dựa vào câu lệnh SQL.</div>
+  </p>
+  <p>
+    <hr style="height:1px;border-width:0;color:lightgray;background-color:lightgray">
+  </p>
+
+  <blockquote>
+    <p>&nbsp;VD1: tìm tất cả các chuỗi con bắt đầu với PERF (phần tô màu).</p>
+  </blockquote>
+
+  <img src="gif/query-like.gif">
+  <p>
+    <hr style="height:1px;border-width:0;color:lightgray;background-color:lightgray">
+  </p>
+ <blockquote>
+    <p>&nbsp;VD2: Triển khai bảng thống kê ở dạng PIVOT (truy vấn không hỗ trợ keyword PIVOT).</p>
+  </blockquote>
+  <img src="gif/query.pivot.png">
+
+  <p>
+    <hr style="height:1px;border-width:0;color:lightgray;background-color:lightgray">
+  </p>
+
+  <p tabindex="-1" dir="auto">
+    <note>
+       <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+          aria-hidden="true">
+          <path
+             d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">
+          </path>
+       </svg>
+       <font style="vertical-align: inherit;">Support functions:</font>
+    </note>
+ </p>
+<!--<blockquote>
+   <img src="gif/query.supportfunction.png">
+
+  <p>&nbsp;1. DATETIME FUNCTIONS:</p>
+  <p>&nbsp;- DATEADD/DATEPART/DATEDIFF/TIMESTAMP</p>
+  <p>&nbsp;- HOUR/MINUTE/SECOND/DAY/MONTH/YEAR</p>
+</blockquote>
+<blockquote>
+  <p>&nbsp;2. LOGIC FUNCTIONS:</p>
+  <p>&nbsp;- ISINT/ISNUMBER/ISDATE</p>
+  <p>&nbsp;- ISUPPER/ISLOWER/ISALPHA/ISDIGIT/ISALPHANUM/ISSYMBOL/ISLIKE/MATCHES</p>
+  <p>&nbsp;- ISBLANK/ISZERO/ISNULL</p>
+  <p>&nbsp;- GREATER/SMALLER/BETWEEN/EQUAL/ISODD/ISEVEN</p>
+  <p>&nbsp;- STARTWITH/ENDWITH/CONTAIN</p>
+</blockquote>
+<blockquote>
+  <p>&nbsp;3. CONVERT FUNCTIONS:</p>
+  <p>&nbsp;- TO.INT/TO.NUM/TO.TEXT/TO.ENG </p>
+  <p>&nbsp;- ROUNDUP/ROUNDDOWN/ROUNDNEAREST</p>
+  <p>&nbsp;- UPPER/LOWER/PROPER/SENTENCE</p>
+</blockquote>
+<blockquote>
+  <p>&nbsp;4. MATH FUNCTIONS:</p>
+  <p>&nbsp;- AVERAGE/PLUS/MINUS/PRODUCT/DIVIDE/RAND/SUMIF/MAXIF/MINIF/AVERAGEIF/MEDIAN</p>
+  <p>&nbsp;- SUM.A/MAX.A/MIN.A/AVERAGE.A</p>
+  <p>&nbsp;- SQRT.A/CEILING.A/TRUNC.A/EXP.A/FLOOR.A/MOD.A/POW.A/POWER.A/SIGN.A/ABS.A/</p>
+</blockquote>
+<blockquote>
+  <p>&nbsp;5. ARRAY FUNCTIONS:</p>
+  <p>&nbsp;- INDEX/MATCH/FIRST/LAST/TAKE/DROP/HSTACK/SORT/SEQUENCE/NO()</p>
+  <p>&nbsp;- FILTER/UNIQUE/NONBLANK/NONZERO/CHARS</p>
+</blockquote>
+<blockquote>
+  <p>&nbsp;6. STRING FUNCTIONS:</p>
+  <p>&nbsp;- FIND/FINDOF/FINDLAST/FINDLASTOF/FIND.AT</p>
+  <p>&nbsp;- LEFT/MID/MID.W/MID.AT/RIGHT</p>
+  <p>&nbsp;- CONCAT/JOIN/TEXTBEFORE/TEXTAFTER/SPLIT.PART/SPLIT </p>
+  <p>&nbsp;- FORMAT/REPT/REVERSE/ERASE</p>
+  <p>&nbsp;- TEXT.DIGIT/TEXT.INT/TEXT.NUM/TEXT.ALPHA/TEXT.ALPHANUM/TEXT.UPPER/TEXT.LOWER</p>
+  <p>&nbsp;- REG.SPLIT/REG.EXTRACT/REG.REPLACE/REG.MATCH/REG.COUNT</p>
+</blockquote>
+<blockquote>
+  <p>&nbsp;7. STATISTICAL FUNCTIONS:</p>
+  <p>&nbsp;- COUNTA/COUNTBLANK/COUNT.A/COUNTZERO/COUNTNULL</p>
+  <p>&nbsp;- COUNTIF/COUNT.W/COLUMNS</p> 
+</blockquote>-->
+
+<pre>DATETIME FUNCTIONS    | DATETIME FUNCTIONS                                     |
+    ----------------------|--------------------------------------------------------|
+    DATEADD.A             | =DATE.ADD.A(interval, num, dates)                      |
+    DATEPART.A            | =DATEPART.A(interval, dates)                           |
+    DATEDIFF.A            | =DATEDIFF.A(interval, date1, date2)                    |
+    TIMESTAMP.A           | =TIMESTAMP.A(datetimes)                                |
+    HOUR.A                | =HOUR.A(datetimes)                                     |
+    MINUTE.A              | =MINUTE.A(datetimes)                                   |
+    SECOND.A              | =SECOND.A(datetimes)                                   |
+    DAY.A                 | =DAY.A(datetimes)                                      |
+    MONTH.A               | =MONTH.A(datetimes)                                    |
+    YEAR.A                | =YEAR.A(datetimes)                                     |
+    DATE.MONTH            | =DATE.MONTH.A(dates)                                   |
+    DATE.YEAR             | =DATE.YEAR.A(dates)                                    |
+    DATE.NAME             | =DATE.NAME.A(dates)                                    |
+    MONTH.NAME            | =MONTH.NAME.A(dates)                                   |
+    ----------------------|--------------------------------------------------------|
+    LOGIC FUNCTIONS       | LOGIC FUNCTIONS                                        |
+    ISINT.A               | =ISINT.A(values)                                       |
+    ISNUMBER.A            | =ISNUMBER.A(values)                                    |
+    ISDATE.A              | =ISDATE.A(values)                                      |
+    ISUPPER.A             | =ISUPPER.A(values)                                     |
+    ISLOWER.A             | =ISLOWER.A(values)                                     |
+    ISALPHA.A             | =ISALPHA.A(values)                                     |
+    ISDIGIT.A             | =ISDIGIT.A(values)                                     |
+    ISALPHANUM.A          | =ISALPHANUM.A(values)                                  |
+    ISSYMBOL.A            | =ISSYMBOL.A(values)                                    |
+    ISLIKE.A              | =ISLIKE.A(values)                                      |
+    ----------------------|--------------------------------------------------------|
+    ISBLANK.A             | =ISBLANK.A(values)                                     |
+    ISZERO.A              | =ISZERO.A(values)                                      |
+    ISNULL.A              | =ISNULL.A(values)                                      |
+    GREATER.A             | =GREATER.A(values)                                     |
+    SMALLER.A             | =SMALLER.A(values)                                     |
+    BETWEEN.A             | =BETWEEN.A(values)                                     |
+    EQUAL.A               | =EQUAL.A(values)                                       |
+    ISODD.A               | =ISODD.A(values)                                       |
+    ISEVEN.A              | =ISEVEN.A(values)                                      |
+    STARTSWITH.A          | =STARTWITH.A(values)                                   |
+    ENDSWITH.A            | =ENDWITH.A(values)                                     |
+    CONTAINS.A            | =CONTAIN.A(values)                                     |
+    ----------------------|--------------------------------------------------------|
+    CONVERT FUNCTIONS     | CONVERT FUNCTIONS                                      |
+    TO.INT                | =TO.INT(values)                                        |
+    TO.NUM                | =TO.NUM(values)                                        |
+    TO.TEXT               | =TO.TEXT(values)                                       |
+    TO.ENG                | =TO.ENG(values)                                        |
+    ROUNDUP.A             | =ROUNDUP.A(values)                                     |
+    ROUNDDOWN.A           | =ROUNDDOWN.A(values,[num])                             |
+    ROUNDNEAREST.A        | =ROUNDNEAREST.A(values,[num])                          |
+    UPPER.A               | =UPPER.A(values)                                       |
+    LOWER.A               | =LOWER.A(values)                                       |
+    PROPER.A              | =PROPER.A(values)                                      |
+    SENTENCE.A            | =SENTENCE.A(values)                                    |
+    ----------------------|--------------------------------------------------------|
+    MATH FUNCTIONS        | MATH FUNCTIONS                                         |
+    AVG.A                 | =AVG.A(column)                                         |
+    PLUS.A                | =PLUS.A(values,num)                                    |
+    MINUS.A               | =MINUS.A(values,num)                                   |
+    PRODUCT.A             | =PRODUCT.A(values,num)                                 |
+    DIVIDE.A              | =DIVIDE.A(values,num)                                  |
+    RAND.A                | =RAND.A()                                              |
+    SUMIF.A               | =SUMIF.A(values, criteria)                             |
+    MAXIF.A               | =MAXIF.A(values, criteria)                             |
+    MINIF.A               | =MINIF.A(values, criteria)                             |
+    AVGIF.A               | =AVGIF.A(values, criteria)                             |
+    MEDIAN.A              | =MEDIAN.A(values)                                      |
+    SUM.A                 | =SUM.A(values)                                         |
+    MAX.A                 | =MAX.A(values)                                         |
+    MIN.A                 | =MIN.A(values)                                         |
+    AVG.A                 | =AVG.A(values)                                         |
+    SQRT.A                | =SQRT.A(values)                                        |
+    CEILING.A             | =CEILING.A(values)                                     |
+    TRUNC.A               | =TRUNC.A(values)                                       |
+    EXP.A                 | =EXP.A(values)                                         |
+    FLOOR.A               | =FLOOR.A(values)                                       |
+    MOD.A                 | =MOD.A(values,num)                                     |
+    POW.A                 | =POW.A(values,num)                                     |
+    POWER.A               | =POWER.A(values,num)                                   |
+    SIGN.A                | =SIGN.A(values)                                        |
+    ABS.A                 | =ABS.A(values)                                         |
+    ----------------------|--------------------------------------------------------|
+    ARRAY FUNCTIONS       | ARRAY FUNCTIONS                                        |
+    INDEX.A               | =INDEX.A(values, [num])                                |
+    MATCH.A               | =MATCH.A(lookup_value,values)                          |
+    FIRST.A               | =FIRST.A(values)                                       |
+    LAST.A                | =LAST.A(values)                                        |
+    TAKE.A                | =TAKE.A(values,num)                                    |
+    DROP.A                | =TAKE.A(values,num)                                    |
+    HSTACK.A              | =HSTACK.A(values)                                      |
+    SORT.A                | =SORT.A(values, order)                                 |
+    SEQUENCE.A            | =SEQUENCE.A(num1,num2)                                 |
+    NO.A()                | =NO.A()                                                |
+    FILTER.A              | =FILTER.A(values, criteria)                            |
+    UNIQUE.A              | =UNIQUE.A(values)                                      |
+    NONBLANK.A            | =NONBLANK.A(values)                                    |
+    NONZERO.A             | =NONZERO.A(values)                                     |
+    CHARS.A               | =CHARS.A(values)                                       |
+    ----------------------|--------------------------------------------------------|
+    STRING FUNCTIONS      | STRING FUNCTIONS                                       |
+    FIND.A                | =FIND.A(values, find_text)                             |
+    FINDOF.A              | =FINDOF.A(values, find_text)                           |
+    FINDLAST.A            | =FINDLAST.A(values, find_text)                         |
+    FINDLASTOF.A          | =FINDLASTOF.A(values, find_text)                       |
+    FIND.AT               | =FIND.AT.A(values, find_text, num)                     |
+    LEFT.A                | =LEFT.A(values, len)                                   |
+    MID.A                 | =MID.A(values, start_num, len)                         |
+                          | =MID.A(values, text1, text2, [index])                  |
+    REPLACE.A             | =REPLACE.A(values, text1, text2)                       |
+    MID.FROM              | =MID.FROM(values, start_num, end_num)                  |
+    RIGHT.A               | =RIGHT.A(values, len)                                  |
+    CONCAT.A              | =CONCAT.A(values)                                      |
+    JOIN.A                | =JOIN.A(delimiter, ignore_empty, values)               |
+    TEXTBEFORE.A          | =TEXTBEFORE.A(values, delimiter, [instance_num])       |
+    TEXTAFTER.A           | =TEXTAFTER.A(values, delimiter, [instance_num])        |
+    SPLIT.PART            | =SPLIT.PART.A(values, delimiter, [instance_num])       |
+    SPLIT.A               | =SPLIT.A(values, delimiter, [by_each], [ignore_empty]) |
+    SLICE.A               | =SLICE.A(values, len)                                  |
+    FORMAT.A              | =FORMAT.A(values, format_code)                         |
+    REPT.A                | =REPT.A(values, num)                                   |
+    REVERSE.A             | =REVERSE.A(value[s])                                   |
+    ERASE.A               | =ERASE.A(values, char_type, include_space)             |
+    TRIM.A                | =TRIM.A(values)                                        |
+    LTRIM.A               | =LTRIM.A(values, [chars])                              |
+    RTRIM.A               | =RTRIM.A(values, [chars]                               |
+    ERASE.ANY             | =ERASE.ANY.A(values, chars)                            |
+    REPLACE.AT            | =REPLACE.A(values, oldtext, newtext, index)            |
+    SUBSTITURE.A          | =SUBSTITUTE.A(values, oldtexts, newtexts)              |
+    STUFF.A               | =STUFF.A(values, start_num, len, insert_text)          |
+    TEXT.DIGIT            | =TEXT.DIGIT(values, include_space)                     |
+    TEXT.INT              | =TEXT.INT(values, [num])                               |
+    TEXT.NUM              | =TEXT.NUM(values, [num])                               |
+    TEXT.ALPHA            | =TEXT.ALPHA(values, include_space)                     |
+    TEXT.ALPHANUM         | =TEXT.ALPHANUM(values, include_space)                  |
+    TEXT.UPPER            | =TEXT.UPPER(values, include_space)                     |
+    TEXT.LOWER            | =TEXT.LOWER(values, include_space)                     |
+    REG.SPLIT             | =REG.SPLIT(values, pattern, [num])                     |
+    REG.EXTRACT           | =REG.EXTRACT(values, pattern, [num])                   |
+    REG.REPLACE           | =REG.REPLACE(values, pattern, replace_text)            |
+    REG.MATCH             | =REG.MATCH(values, pattern)                            |
+    REG.COUNT             | =REG.COUNT(values, pattern, [is_group])                |
+    ----------------------|--------------------------------------------------------|
+    STATISTICAL FUNCTIONS | STATISTICAL FUNCTIONS                                  |
+    COUNTA.A              | =COUNTA.A(values)                                      |
+    COUNTBLANK.A          | =COUNTBLANK.A(values)                                  |
+    COUNT.A               | =COUNT.A(values)                                       |
+    COUNTZERO.A           | =COUNTZERO.A(values)                                   |
+    COUNTNULL.A           | =COUNTNULL.A(values)                                   |
+    COUNTIF.A             | =COUNTIF.A(values)                                     |
+    COUNT.W               | =COUNT.W.A(values)                                     |
+    COLUMNS.A             | =COLUMNS.A(values)                                     |
+    ----------------------|--------------------------------------------------------|
+    SYSTEM FUNCTION       | SYSTEM FUNCTION                                        |
+    FILE.FULLNAME         | =FILE.FULLNAME(path)                                   |
+    FILE.EXT              | =FILE.EXT(path)                                        |
+    FILE.NAME             | =FILE.NAME(path)                                       |
+    FILE.FOLDERPATH       | =FILE.CURFOLDER(path)                                  |
+    FILE.FOLDERNAME       | =FILE.FOLDERNAME(path)                                 |
+    FOLDER.NAME           | =FOLDER.NAME(path)                                     |
+</pre>
+
+
+  <p><strong>Related function</strong></p>
+
+  <p>
+    <a href="xquery.html">XQUERY</a>&nbsp;&nbsp;&nbsp;Truy vấn dữ liệu giữa nhiều bảng dựa vào câu lệnh SQL.
+  </p>
+  <p>
+    <a href="pivot.html">PIVOT</a>&nbsp;&nbsp;&nbsp;Tương tự chức năng PIVOT trong Power Query.
+  </p>
+  <p>Return to <a href="index.function.html">Home</a></p>
+
+</body>
+
+</html>
