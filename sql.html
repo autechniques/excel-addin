@@ -129,7 +129,9 @@
   UNIQUE.A              | =UNIQUE.A(values)                                      
   NONBLANK.A            | =NONBLANK.A(values)                                    
   NONZERO.A             | =NONZERO.A(values)                                     
-  CHARS.A               | =CHARS.A(values)                                       
+  CHARS.A               | =CHARS.A(values)        
+  GROUP.A               | =GROUP.A(expression, [delimiter], [is_sort]) 
+  GROUP.U               | =GROUP.U(expression, [delimiter], [is_sort])                                
                         |                                                        
   STRING FUNCTIONS      | STRING FUNCTIONS                                       
   FIND.A                | =FIND.A(values, find_text)                             
@@ -156,7 +158,7 @@
   ERASE.A               | =ERASE.A(values, char_type, include_space)             
   TRIM.A                | =TRIM.A(values)                                        
   LTRIM.A               | =LTRIM.A(values, [chars])                              
-  RTRIM.A               | =RTRIM.A(values, [chars]                               
+  RTRIM.A               | =RTRIM.A(values, [chars])                               
   ERASE.ANY             | =ERASE.ANY.A(values, chars)                            
   REPLACE.AT            | =REPLACE.A(values, oldtext, newtext, index)            
   SUBSTITURE.A          | =SUBSTITUTE.A(values, oldtexts, newtexts)              
@@ -190,7 +192,7 @@
   FILE.NAME             | =FILE.NAME(path)                                       
   FILE.FOLDERPATH       | =FILE.CURFOLDER(path)                                  
   FILE.FOLDERNAME       | =FILE.FOLDERNAME(path)                                 
-  FOLDER.NAME           | =FOLDER.NAME(path)                                                                       
+  FOLDER.NAME           | =FOLDER.NAME(path)      
 </pre>
 
 </blockquote>
