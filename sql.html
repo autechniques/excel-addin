@@ -114,6 +114,7 @@
   ABS.A                 | =ABS.A(values)                                         
   SUM.C                 | =SUM.C(expression)                                         
   SCAN.C                | =SCAN.C(initial_value, column, expression[a,b])                                         
+  SCANBY.C              | =SCANBY.C(initial_value, column, expression[a,b], by_columns)                                         
   ----------------------|--------------------------------------------------------                                                  
   ARRAY FUNCTIONS       | ARRAY FUNCTIONS                                        
   INDEX.A               | =INDEX.A(values, [num])                                
@@ -147,6 +148,7 @@
   ----------------------|--------------------------------------------------------                                                      
   STRING FUNCTIONS      | STRING FUNCTIONS                                       
   FIND.C                | =FIND.C(value, find_text, [start_num])                             
+  CONCAT.C              | =CONCAT.C(delimiter, value1, value2,..)                             
   FIND.A                | =FIND.A(values, find_text)                             
   FINDOF.A              | =FINDOF.A(values, find_text)                           
   FINDLAST.A            | =FINDLAST.A(values, find_text)                         
@@ -169,6 +171,7 @@
   SLICE.A               | =SLICE.A(values, len)                                  
   FORMAT.A              | =FORMAT.A(values, format_code)                         
   REPT.A                | =REPT.A(values, num)                                   
+  REPT.C                | =REPT.C(expression, num)                                   
   REVERSE.A             | =REVERSE.A(value[s])                                   
   ERASE.A               | =ERASE.A(values, char_type, include_space)             
   TRIM.A                | =TRIM.A(values)                                        
