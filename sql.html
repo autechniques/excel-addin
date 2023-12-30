@@ -113,7 +113,7 @@
   SIGN.A                | =SIGN.A(values)                                        
   ABS.A                 | =ABS.A(values)                                         
   SUM.C                 | =SUM.C(expression)                                         
-  SCAN.C                | =SCAN.C(initial_value, column, expression[a,b,c])                                         
+  SCAN.C                | =SCAN.C(initial_value, column, expression[a,b])                                         
   ----------------------|--------------------------------------------------------                                                  
   ARRAY FUNCTIONS       | ARRAY FUNCTIONS                                        
   INDEX.A               | =INDEX.A(values, [num])                                
@@ -134,7 +134,8 @@
   GROUP.A               | =GROUP.A(expression, [delimiter], [is_sort]) 
   GROUP.U               | =GROUP.U(expression, [delimiter], [is_sort])                                
   GROUP.ROWS            | =GROUP.ROWS(expression, [ignore_empty], [is_distinct])                                
-  GROUP.SCAN            | =GROUP.SCAN(initial_value, column, expression[a,b])                                
+  GROUP.REDUCEA         | =GROUP.REDUCEA(initial_value, column, expression[a,b])                                
+  GROUP.REDUCEB         | =GROUP.REDUCEB(initial_value, column, expression[a,b])                                
   SEQUENCE.C            | =SEQUENCE.C(start_num, end_num, [step])                                
   SEQUENCE.R            | =SEQUENCE.R(start_num, end_num, [step])                                
   SEQUENCEN.R           | =SEQUENCEN.R(start_num, nums, [step])                                
