@@ -29,6 +29,28 @@
   </blockquote>
   <img src="gif/sql.scan.png">
 
+  <blockquote>
+    <p>&nbsp;VD3: Lọc bỏ các hàng trống (hoặc tất cả giá trị =0).</p>
+  </blockquote>
+  <img src="gif/sql.nonblanks.png">
+
+  <p tabindex="-1" dir="auto">
+    <note>
+       <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+          aria-hidden="true">
+          <path
+             d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">
+          </path>
+       </svg>
+       <font style="vertical-align: inherit;">Lưu ý:</font>
+    </note>
+ </p>
+ <blockquote>
+  <p>&nbsp;1. Để sử dụng các hàm SQL và XSQL bạn cần cài đặt tối thiếu SQL Server Express (free) hoặc SQL Server Enterprise(pricing).</p>
+  <p>&nbsp;2. Nên sử dụng phiên bản SQL Server mới nhất (ví dụ SQL Server 2022 thay vì SQL Server 2019).</p>
+  <p>&nbsp;3. Cách cài đặt SQL Server bạn đọc Google theo từ khóa để biết thêm chi tiết.</p>
+</blockquote>
+
   <p tabindex="-1" dir="auto">
     <note>
        <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
@@ -220,6 +242,12 @@
   FILE.FOLDERPATH       | =FILE.CURFOLDER(path)                                  
   FILE.FOLDERNAME       | =FILE.FOLDERNAME(path)                                 
   FOLDER.NAME           | =FOLDER.NAME(path)      
+  ----------------------|--------------------------------------------------------                                                      
+  QUERY EXTENSION       | QUERY EXTENSION 
+  PIVOT.FIELDS          | =PIVOT.FIELDS(column_name)
+  TABLE.GROUP.FIRST     | =TABLE.GROUP.FIRST(columns)
+  TABLE.GROUP.LAST      | =TABLE.GROUP.LAST(columns)
+
 </pre>
 
 </blockquote>
