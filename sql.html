@@ -244,10 +244,14 @@
   FILE.FOLDERNAME       | =FILE.FOLDERNAME(path)                                 
   FOLDER.NAME           | =FOLDER.NAME(path)      
   ----------------------|--------------------------------------------------------                                                      
-  QUERY EXTENSION       | QUERY EXTENSION 
+  EXTENSION             | EXTENSION 
   PIVOT.FIELDS          | =PIVOT.FIELDS(column)
-  TABLE.GROUP.FIRST     | =TABLE.GROUPS(columns).FIRST()
-  TABLE.GROUP.LAST      | =TABLE.GROUPS(columns).LAST()
+  GROUP.FIRST           | =TABLE.GROUPS(columns).FIRST()
+  GROUP.LAST            | =TABLE.GROUPS(columns).LAST()
+  ROWS.COUNT            | =ROWS(columns).COUNT()
+                        | =ROWS(columns).ORDERBY(columns).COUNT()
+  ROWS.NUMBER           | =ROWS(columns).NUMBER()
+                        | =ROWS(columns).ORDERBY(columns).NUMBER()
 
 
 </pre>
