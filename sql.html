@@ -256,7 +256,9 @@
   EXTENSION             | EXTENSION 
   PIVOT.FIELDS          | =PIVOT.FIELDS(column)
   GROUP.FIRSTROW        | =TABLE.GROUPS(columns).FIRSTROW()
+                        | =TABLE.GROUPS(columns).ORDERBY(col1, [order1], col2, [order2],..).FIRSTROW()
   GROUP.LASTROW         | =TABLE.GROUPS(columns).LASTROW()
+                        | =TABLE.GROUPS(columns).ORDERBY(col1, [order1], col2, [order2],..).LASTROW()
   ROWS.COUNT            | =ROWS(columns).COUNT()
                         | =ROWS(columns).ORDERBY(col1, [order1], col2, [order2],..).COUNT()
   ROWS.NUMBER()         | =ROWS(columns).NUMBER()
