@@ -259,10 +259,10 @@
                         | =TABLE.GROUPS(columns).ORDERBY(col1, [order1], col2, [order2],..).FIRST()
   GROUP.LAST()          | =TABLE.GROUPS(columns).LAST()
                         | =TABLE.GROUPS(columns).ORDERBY(col1, [order1], col2, [order2],..).LAST()
-  ROWS.COUNT()          | =ROWS(columns).COUNT()
-                        | =ROWS(columns).ORDERBY(col1, [order1], col2, [order2],..).COUNT()
-  ROWS.NUMBER()         | =ROWS(columns).NUMBER()
-                        | =ROWS(columns).ORDERBY(col1, [order], col2, [order2],..).NUMBER()
+  ROWS.COUNT()          | =ROWS([columns]).COUNT([expr])
+                        | =ROWS([columns]).ORDERBY(col1, [order1], col2, [order2],..).COUNT([expr])
+  ROWS.NUMBER()         | =ROWS([columns]).NUMBER()
+                        | =ROWS([columns]).ORDERBY(col1, [order], col2, [order2],..).NUMBER()
   ROWS.RANK()           | =ROWS(columns).RANK()
                         | =ROWS(columns).ORDERBY(col1, [order], col2, [order2],..).RANK() 
   ROWS.RANKD()          | =ROWS(columns).RANKD()
@@ -301,6 +301,8 @@
   COLUMNS.SPLIT         | =COLUMNS(column).SPLIT(delimiter)
   IFS                   | =IFS(expr1, result1, expr2, result2,..)
   SWITCH                | =SWITCH(expr, val1, result1, val2, result2,..)
+</blockquote>
+
 </pre>
 <p tabindex="-1" dir="auto">
   <note>
@@ -314,12 +316,11 @@
   </note>
 </p>
 <blockquote>
-  <p>&nbsp;1. Tham chiếu [columns], hoặc tham số của các Aggregate function (SUM, MAX, MIN, AVG) nếu là expression phải đặt trong mảng {}.</p>
-  <p>&nbsp;2. Các tham số [order], [pre_num], [next_num] có thể [>0, =0, &lt;0] hoặc bỏ trống .</p>
+  <p>&nbsp;1. Tham chiếu [columns], hoặc tham số của các Aggregate function (SUM, MAX, MIN, AVG) nếu là expression phải đặt trong mảng {..}.</p>
+  <p>&nbsp;2. Các tham số [order], [pre_num], [next_num] có thể [>0, =0, &lt;0] hoặc missing .</p>
 
 </blockquote>
 
-</blockquote>
   <p><strong>Related function</strong></p>
   <p>
     <a href="xsql.html">XSQL</a>&nbsp;&nbsp;&nbsp;Truy vấn CSDL từ SQL Server.
