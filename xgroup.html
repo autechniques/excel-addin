@@ -91,11 +91,20 @@
           - Để hiểu cách sử dụng hàm xem thêm các file ví dụ mẫu .xlsx từ DROPBOX.
         </p>
       </blockquote>
+      <p>
+        <hr style="height:1px;border-width:0;color:lightgray;background-color:lightgray">
+      </p>
       <blockquote>
         <p>&nbsp;VD4: Tìm giao dịch cuối cùng của mỗi shop dựa vào mốc thời gian tại cột C.</p>
     </blockquote>
     <img src="gif/xgroup.variable.png">
 
+    <blockquote>
+        <p>&nbsp;Giải thích cách hoạt động:.</p>
+        <p>&nbsp;Hàm sẽ phân nhóm theo cột 1 và tiến hành tính toán lên cột 2,3.</p>
+        <p>&nbsp;Tại cột 2: hàm sẽ tìm giá trị lớn nhất (ngày cuối cùng) của từng nhóm với giá trị đại diện là v1 (chẳng hạn Shop 1 ngày cuối cùng là 1/3/2023).</p>
+        <p>&nbsp;Tại cột 3: hàm ROW(V1) trả về vị trí dòng giá trị này, INDEX(c3,ROW(v1)) trả về giá trị tại cột 3 ứng với dòng vừa tìm được (=7).</p>
+    </blockquote>
      <p tabindex="-1" dir="auto">
         <note>
            <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
