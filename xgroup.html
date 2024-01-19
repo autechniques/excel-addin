@@ -130,12 +130,12 @@
             - COUNTUNIQUEROWS                                   [vd: countuniquerows(c1) đếm hàng duy nhất trong chính phân nhóm đó]
             - MAXIF/MINIF/COUNTIF/SUMIF/AVERAGEIF/PRODUCTIF     [vd: maxif(c1,'>5') hoặc maxif(c1,'>0',c2)]
             - ROW                                               [vd: v=max(c1), r=row(v) chỉ áp dụng với các biến tồn tại thuộc tính ROW như max,min,first,last]
-            - INDEX/MATCH                                       [vd: index(c1,5), match('a',c2,0) [tham số cuối >=0 (tìm trên xuống) hoặc <=0 (tìm dưới lên)]
-            - FIRST/LAST                                        [vd: first(c1)]
-            - TAKE/DROP                                         [vd: take(c1,5) hoặc drop(c1,-5)]
-            - UNIQUE/SORT                                       [vd: unique(c1), sort(c1,1) [tham số cuối sắp xếp >=0 (tăng dần) <=0 (giảm dần)]
+            - INDEX/MATCH                                       [vd: index(c1,[num]), match('a',c2,0) - tham số [num] >=0 (tìm trên xuống) hoặc <=0 (tìm dưới lên)
+            - FIRST/LAST                                        [vd: first(c1,[ignore_empty])] hoặc last(c1) -tham số [ignore_empty] bỏ qua giá trị rỗng
+            - TAKE/DROP                                         [vd: take(c1,[num]) hoặc drop(c1,[num])] - tham số [num] >=0 (lấy trên xuống) hoặc <0 (lấy từ cuối).
+            - UNIQUE/SORT                                       [vd: unique(c1), sort(c1,[sort_order]) -tham số [sort_order] sắp xếp >=0 (tăng dần) <=0 (giảm dần)
             - LEN                                               [vd: len(c1)]
-            - JOIN/JOINIF                                       [vd: join(',',,c1) hoặc joinif(',',,'>5',c1)]
+            - JOIN/JOINIF                                       [vd: join(',',[ignore_empty],c1) hoặc joinif(',',[ignore_empty],'>5',c1)]
             - MID/LEFT/RIGHT/TEXTBEFORE/TEXTAFTER               [vd: textbefore(c1,'abc')]
             - TRIM/REPLACE/QUOTE                                [vd: replace(c1,'a','b') hoặc quote(c1)]
             - UPPER/LOWER/PROPER/SENTENCE                       [vd: upper(c1)]
