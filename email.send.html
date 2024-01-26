@@ -23,22 +23,23 @@
     <p>&nbsp;Trước khi sử dụng hàm này hãy đọc hàm <a href="https://autechniques.com/email.register.html"
       style="color: #ea0606;text-decoration:underline"">EMAIL.REGISTER</a> (tạo tài khoản ứng dụng từ tài khoản Google của bạn).</p>
   </blockquote>
+  <p>&nbsp;Sau khi có tài khoản, bạn chỉ việc gọi hàm để thực thi đơn giản như ảnh!.</p>
   <img src="gif/email.send.png">
 
   <blockquote>
     <p>&nbsp;Xem <a href="https://youtu.be/YAukmyVCbcI"
       style="color: #ea0606;text-decoration:underline"">Video Demo</a></p>
     <p>&nbsp;Nếu muốn gửi thư tiêu chuẩn, bạn nên gọi các hàm này thông qua VBA, sử dụng các vòng lặp để gửi MAIL.</p>
-    <p>&nbsp;1. Hàm có nhiều tham số, bạn đọc chủ yếu quan tâm tham số [mail_content] và [format].</p>
+    <p>&nbsp;1. Hàm có nhiều tham số, chủ yếu quan tâm tham số nội dung [mail_content] và định dạng thư [format].</p>
     <p>&nbsp;2. Nội dung thư càng lớn, hoặc nhiều kiểu định dạng hoặc nhiều files đính kèm ảnh hưởng một phần tới thời
       gian gửi thư.</p>
 
-    <p>&nbsp;⚊ Nếu tham số [format]=0: mail thuần text (không có định dạng bảng, màu sắc) cho tốc độ gửi nhanh nhất.</p>
+    <p>&nbsp;⚊ Nếu tham số [format]=0: mail được gửi ở dạng thuần text (không có định dạng html). Sử dụng để thông báo tin tức, cho tốc độ gửi nhanh nhất.</p>
     <p>&nbsp;⚊ Nếu tham số [format]=1: gửi thư dưới dạng HTML hỗ trợ màu sắc, font, định dạng khung viền bảng cho nội
       dung thư trực quan và chuyên nghiệp.</p>
     <p>&nbsp;⚊ Nếu tham số [format]=2: cho phép nhúng hình ảnh trực tiếp vào thư. (ví dụ chữ ký, logo,..).</p>
 
-    <p>&nbsp;Lưu ý: quá trình soạn thư HTML nên gửi demo và xem trước kết quả mẫu để đảm bảo thư gửi đi đúng định dạng đã soạn thảo.</p>
+    <p>&nbsp;Lưu ý: quá trình soạn thư HTML nên gửi demo và xem trước định dạng kết quả mẫu để đảm bảo thư gửi đi đúng định dạng đã soạn thảo.</p>
     <p>&nbsp;3. Để tránh gửi thư vào mục spam, google để biết các quy cách gửi thư để tránh bị liệt kê vào mục spam.</p>
     <p>&nbsp;4. Số lượng mail trong mỗi lần gửi và số lượng tin được gửi trong ngày phụ thuộc loại tài khoản mail.</p>
     <p>&nbsp;5. Sau khi sử dụng xong chương trình, gọi hàm EMAIL.UNREGISTER để dừng kết nối.</p>
