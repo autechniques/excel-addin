@@ -23,6 +23,7 @@
     <p>&nbsp;Trước khi sử dụng hàm này hãy đọc hàm <a href="https://autechniques.com/email.register.html"
         style="color: #ea0606;text-decoration:underline"">EMAIL.REGISTER</a> (tạo tài khoản ứng dụng từ tài khoản Google của bạn).</p>
       <p>&nbsp;Sau khi có tài khoản, bạn chỉ việc gọi hàm để thực thi đơn giản như ảnh!</p>
+      <p>&nbsp;Nhìn lướt qua, đây là phương thức khá kỳ lạ để gửi MAIL. nhưng nó là cách dễ dàng nhất mà Tools tạo ra!</p>
   </blockquote>
   <img src=" gif/email.send.png">
 
@@ -32,9 +33,12 @@
     <p>&nbsp;Nghĩa là bạn sẽ sử dụng VBA nhưng sẽ kết hợp hàm mở rộng từ Tools để gửi MAIL.</p>
     <p>&nbsp;Nếu chưa học VBA, bạn có thể dùng trực tiếp hàm mở rộng của Tools để gửi (xem phần video demo).</p>
     <p>&nbsp;1. Hàm có nhiều tham số, chủ yếu quan tâm tham số nội dung [mail_content] và định dạng thư [format].</p>
+    <p>&nbsp;⚊ Tham số [mail_to]=0: chỉ định danh sách mail sẽ gửi tới (không giới hạn trong mỗi thư gửi).</p>
+    <p>&nbsp;⚊ Tham số [mail_cc]=0: chỉ định danh sách mail được cc (không giới hạn trong mỗi thư gửi).</p>
+    <p>&nbsp;⚊ Tham số [mail_subject]=0: tên tiêu đề thư (chào hỏi).</p>
+    <p>&nbsp;⚊ Tham số [mail_contents]=0: vùng nội dung thư nằm trên một cột (A1:A10) hoặc một vùng (ví dụ A1:C10).</p>
     <p>&nbsp;2. Nội dung thư càng lớn, hoặc nhiều kiểu định dạng hoặc nhiều files đính kèm ảnh hưởng một phần tới thời
       gian gửi thư.</p>
-
     <p>&nbsp;⚊ Nếu tham số [format]=0: mail được gửi ở dạng thuần text (không có định dạng html). Sử dụng để thông báo tin tức, cho tốc độ gửi nhanh nhất.</p>
     <p>&nbsp;⚊ Nếu tham số [format]=1: gửi thư dưới dạng HTML hỗ trợ màu sắc, font, định dạng khung viền bảng cho nội
       dung thư trực quan và chuyên nghiệp.</p>
