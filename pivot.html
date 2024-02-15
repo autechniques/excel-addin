@@ -27,9 +27,8 @@
     </note>
  </p>
  <blockquote>
-  <p>Hàm QUERY không hỗ trợ keyword PIVOT trong câu lệnh truy vấn, hàm PIVOT là một giải pháp thay thế. </p>
-  <p>Trong một số t/h nếu cần tính toán tổng hợp tương tự PIVOT table (cần thiết sử dụng các hàm AGGREGATE function),</p>
-  <p>Xem xét sử dụng hàm phân nhóm GROUP hoặc XGROUP cho các cột cần tính toán trước khi dùng hàm PIVOT.</p>
+    <p>Nếu cần tính toán AGGREGATE tiêu chí sau khi PIVOT, xem xét dùng hàm phân nhóm GROUP hoặc XGROUP trước khi PIVOT.</p>
+    <p>Giải pháp toàn diện hơn là sử dụng hàm SQL hỗ trợ key word PIVOT. </p>
 </blockquote>
   <p><strong>Related function</strong></p>
   
