@@ -4549,7 +4549,7 @@ a.token:hover {
     color: #31A96E;
 }
 
-.token.special.function {
+.token.logic.function {
     color: #5BB8E9;
 }
 
