@@ -4554,11 +4554,11 @@ a.token:hover {
 }
 
 .token.punctuation {
-    color: #8b8b8b;
+    color: #FF66FF;
 }
 
 .token.string {
-    color: #be0cc4;
+    color: #8b8b8b;
 }
 
 .token.selector,
