@@ -4539,6 +4539,7 @@ a.token:hover {
     color: #FF66FF;
 }
 
+.token.define.name
 .token.operator {
     background-color: transparent;
     color: #fb3e2d;
