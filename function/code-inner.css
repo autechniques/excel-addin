@@ -4546,7 +4546,7 @@ a.token:hover {
 }
 
 .token.function {
-    color: #0b7831;
+    color: #31A96E;
 }
 
 .token.special.function {
@@ -4554,7 +4554,7 @@ a.token:hover {
 }
 
 .token.punctuation {
-    color: #be0cc4;
+    color: #8b8b8b;
 }
 
 .token.string {
@@ -4564,7 +4564,7 @@ a.token:hover {
 .token.selector,
 .token.number,
 .token.boolean {
-    color: #1E1E1E;
+    color: #255dbc;
 }
 
 @media (min-width:62rem) {
