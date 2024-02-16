@@ -36,8 +36,9 @@
 </blockquote>
 
   <img src="gif/pivot.sql.png">
-  <code class="language-xls"><span class="token operator">=</span><span class="token operator">SQL.AU</span><span class="token punctuation">(</span><span class="token range selector">A2:C10</span><span class="token punctuation">,</span><span class="token string">"SELECT * FROM (SELECT DISTINCT A AS SP,B,C FROM TABLE) AS D PIVOT (SUM(C) PIVOTZDFIELDS(B)) AS T"</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span></code>
-  <p><strong>Related function</strong></p>
+  <code class="language-xls"><span class="token operator">=</span><a class="token function" href="/functions/sql.au-function">SQL.AU</a><span class="token punctuation">(</span><span class="token range selector">A2:C10</span><span class="token punctuation">,</span><span class="token string">"SELECT * FROM (SELECT DISTINCT A AS SP,B,C 'FROM' TABLE) AS D PIVOT (SUM(C) PIVOT.FIELDS(B)) AS T"</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span></code>
+   
+   <p><strong>Related function</strong></p>
   
   <p>
   <a href="match.r.html">MATCH.R</a>&nbsp;&nbsp;&nbsp;Trả về vị trí (hàng) xuất hiện của một mảng nằm trong mảng chỉ định.
