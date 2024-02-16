@@ -10,11 +10,15 @@
   </h1>
   
   <p><div>● Tương tự chức năng PIVOT trong Power Query.</div></p>
-  
-  <img src="gif/pivot.gif">
+  <p>
+   <hr style="height:1px;border-width:0;color:lightgray;background-color:lightgray">
+</p>
   <blockquote>
-      <p>&nbsp;VD1: Triển khai lại mảng bằng hàm PIVOT.</p>
-  </blockquote>
+   <p>&nbsp;VD1: Triển khai lại mảng bằng hàm PIVOT.</p>
+</blockquote>
+
+  <img src="gif/pivot.gif">
+  
   <p tabindex="-1" dir="auto">
     <note>
        <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
@@ -30,6 +34,9 @@
     <p>Nếu cần tính toán AGGREGATE tiêu chí sau khi PIVOT, xem xét dùng hàm phân nhóm GROUP hoặc XGROUP trước khi PIVOT.</p>
     <p>Giải pháp toàn diện hơn là sử dụng hàm SQL hỗ trợ keyword PIVOT. </p>
 </blockquote>
+
+  <img src="gif/pivot.sql.png">
+  <code class="language-xls"><span class="token operator">=</span><span class="token operator">SQLZDAU</span><span class="token punctuation">(</span><span class="token range selector">A2:C10</span><span class="token punctuation">,</span><span class="token string">"SELECT * FROM (SELECT DISTINCT A AS SP,B,C FROM TABLE) AS D PIVOT (SUM(C) PIVOTZDFIELDS(B)) AS T"</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span></code>
   <p><strong>Related function</strong></p>
   
   <p>
