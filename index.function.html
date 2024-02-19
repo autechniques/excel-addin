@@ -195,6 +195,7 @@
                   <tr id=D><td><a href="decrypt.file.html">DECRYPT.FILE</a></td><td>Giải mã Text File đã được mã hóa bởi hàm ENCRYPT.FILE</td></tr>
                   <tr id=D><td><a href="degreetotext.html">DEGREETOTEXT</a></td><td>Chuyển đổi độ (số thực) sang text.</td></tr>
                   <tr id=D><td><a href="divide.html">DIVIDE</a></td><td>Phân chia lại mảng.</td></tr>
+                  <tr id=D><td><a href="divisor.html">DIVISOR</a></td><td>Trả về tất cả các ước số của một số dương chỉ định.</td></tr>
                   <tr id=D><td><a href="drop.html">DROP</a></td><td><img src="https://support.content.office.net/en-us/media/8f5fa894-48e1-47bc-a16b-6d4e8b42aba9.png" alt="Office 365 button" loading="lazy"></td></tr>
                   <tr id=D><td><a href="drop.c.html">DROP.C</a></td><td>Xóa một số lượng ký tự trong chuỗi chỉ định tính từ bắt đầu (>0) hoặc từ cuối (<0).</td></tr>
                   <tr id=D><td><a href="dropbefore.html">DROPBEFORE</a></td><td>Loại bỏ một phần mảng tính từ vị trí bắt đầu đến trước giá trị được tìm thấy.</td></tr>
@@ -309,10 +310,11 @@
                   <tr id=H><td><a href="html.expr.html">HTML.EXPR</a></td><td>Trả về mã HTML code của một công thức chỉ định.</td></tr>
                   <tr id=H><td><a href="html.filter.html">HTML.FILTER</a></td><td>(Web-Addin) Lọc node html dựa trên node name, att/tag,..</td></tr>
                   <tr id=H><td><a href="html.guid.html">HTML.GUID</a></td><td>(Web-Addin) Trả về mã định danh HTML code từ url chỉ định.</td></tr>
-                  <tr id=H><td><a href="html.raw.html">HTML.RAW</a></td><td>(Web-Addin) Trả về HTML thô từ url chỉ định.</td></tr>
+                  <tr id=H><td><a href="html.rawtext.html">HTML.RAWTEXT</a></td><td>(Web-Addin) Trả về HTML thô từ url chỉ định.</td></tr>
                   <tr id=H><td><a href="html.table.html">HTML.TABLE</a></td><td>(Web-Addin) Trả về bảng HTML dựa trên xpath chỉ định.</td></tr>
                   <tr id=H><td><a href="html.text.html">HTML.TEXT</a></td><td>(Web-Addin) Trả về chuỗi nội dung của HTML node chỉ định.</td></tr>
                   <tr id=H><td><a href="hypelink.get.html">HYPELINK.GET</a></td><td>Trả về ulr từ ô chứa hypelink.</td></tr>
+                  <tr id=I><td><a href="i_function.html">I_FUNCTION</a></td><td>Các hàm tổng hợp (MAX,MIN,..) phụ trợ cho hàm AGGREGATE.R</td></tr>
                   <tr id=I><td><a href="image.load.html">IMAGE.LOAD</a></td><td>Hiển thị hình ảnh từ địa chỉ ảnh web.</td></tr>
                   <tr id=I><td><a href="import.html">IMPORT</a></td><td>Hàm nối mảng theo chiều ngang hoặc dọc.</td></tr>
                   <tr id=I><td><a href="import.csv.html">IMPORT.CSV</a></td><td>Nhập dữ liệu từ tệp văn bản (.csv,.md,.txt,vv..) vào Excel</td></tr>
@@ -337,8 +339,10 @@
                   <tr id=I><td><a href="iscontain.w.html">ISCONTAIN.W</a></td><td>Tương tự hàm ISCONTAIN. (Áp dụng với chuỗi)</td></tr>
                   <tr id=I><td><a href="isend.html">ISEND</a></td><td>Kiểm tra phần tử nằm ở vị trí kết thúc của mảng cho trước.</td></tr>
                   <tr id=I><td><a href="isend.w.html">ISEND.W</a></td><td>Tương tự hàm ISEND. (Áp dụng với chuỗi)</td></tr>
+                  <tr id=I><td><a href="iseven.html">ISEVEN</a></td><td>Tương tự hàm ISEVEN trên #Excel365.</td></tr>
                   <tr id=I><td><a href="isinclude.html">ISINCLUDE</a></td><td>Kiểm trả nếu một mảng chứa các phần tử mảng còn lại.</td></tr>
                   <tr id=I><td><a href="islower.html">ISLOWER</a></td><td>Kiểm tra nếu các ký tự trong chuỗi đều viết thường.</td></tr>
+                  <tr id=I><td><a href="isodd.html">ISODD</a></td><td>Tương tự hàm ISODD trên #Excel365.</td></tr>
                   <tr id=I><td><a href="isrept.html">ISREPT</a></td><td>Kiểm tra nếu mảng chỉ bao gồm một phần tử lặp lại.</td></tr>
                   <tr id=I><td><a href="isrept.w.html">ISREPT.W</a></td><td>Tương tự hàm ISREPT. (Áp dụng với chuỗi)</td></tr>
                   <tr id=I><td><a href="issearch.w.html">ISSEARCH.W</a></td><td>Kiểm tra hai chuỗi khớp nhau. (Đánh giá chức năng của hàm SEARCH)</td></tr>
@@ -410,6 +414,7 @@
                   <tr id=N><td><a href="nonerror.html">NONERROR</a></td><td>Trả về danh sách gồm các phần tử khác ERROR.</td></tr>
                   <tr id=N><td><a href="nonzero.html">NONZERO</a></td><td>Trả về danh sách gồm các phần tử khác 0 và không chứa rỗng.</td></tr>
                   <tr id=N><td><a href="numbertowords.html">NUMBERTOWORDS</a></td><td>Chuyển đổi tiền tệ sang chữ. (Đọc số thành chữ)</td></tr>
+                  <tr id=O><td><a href="o_operator.html">O_OPERATOR</a></td><td>Toán tử phụ trợ của hàm ISBETWEEN.</td></tr>
                   <tr id=O><td><a href="ocr.html">OCR</a></td><td>Nhận diện ký tự quang học, chuyển đổi ảnh về text.</td></tr>
                   <tr id=O><td><a href="offset.html">OFFSET</a></td><td>Mở rộng hàm OFFSET trên #Excel365.</td></tr>
                   <tr id=P><td><a href="partial.sum.html">PARTIAL.SUM</a></td><td>Cách sử dụng tương tự hàm COMBINE.SUM</td></tr>
@@ -462,7 +467,8 @@
                   <tr id=S><td><a href="series.count.html">SERIES.COUNT</a></td><td>Đếm số lượng các số trong một giới hạn từ một chuỗi. (Vd: "2-5")</td></tr>
                   <tr id=S><td><a href="series.max.html">SERIES.MAX</a></td><td>Trả về giá trị lớn nhất trong một giới hạn chuỗi. (Vd: "2-5")</td></tr>
                   <tr id=S><td><a href="series.min.html">SERIES.MIN</a></td><td>Trả về giá trị nhỏ nhất trong một giới hạn chuỗi. (Vd: "2-5")</td></tr>
-                  <tr id=S><td><a href="seriesx.html">SERIESX</a></td><td>Tương ự hàm SERIES. (Áp dụng trên từng hàng)</td></tr>
+                  <tr id=S><td><a href="series.n.html">SERIES.N</a></td><td>Tương tự hàm SERIES. (Áp dụng trên từng hàng)</td></tr>
+                  <tr id=S><td><a href="seriesx.html">SERIESX</a></td><td>Trả về bộ phần tử liên tiếp theo số lượng chỉ định.</td></tr>
                   <tr id=S><td><a href="slide.html">SLIDE</a></td><td>Trả về bộ phần tử liền kề tịnh tiến với kích thước chỉ định.</td></tr>
                   <tr id=S><td><a href="slide.w.html">SLIDE.W</a></td><td>Tương tự hàm SLIDE. (Áp dụng với chuỗi)</td></tr>
                   <tr id=S><td><a href="small.html">SMALL</a></td><td>Trả về vị trí của K giá trị nhỏ nhất trong mảng.</td></tr>
@@ -507,7 +513,9 @@
                   <tr id=T><td><a href="text.html">TEXT</a></td><td>Hàm định dạng văn bản cho cột trong mảng.</td></tr>
                   <tr id=T><td><a href="text.alpha.html">TEXT.ALPHA</a></td><td>Trả về danh sách ký tự dạng chữ trong chuỗi.</td></tr>
                   <tr id=T><td><a href="text.alphanum.html">TEXT.ALPHANUM</a></td><td>Trả về danh sách ký tự dạng chữ hoặc số trong chuỗi.</td></tr>
+                  <tr id=T><td><a href="text.ascii.html">TEXT.ASCII</a></td><td>Trả về danh sách ký tự alphabet của một chuỗi.</td></tr>
                   <tr id=T><td><a href="text.binary.html">TEXT.BINARY</a></td><td>Trả về số lượng ký tự cần sửa để chuỗi 2 trở thành chuỗi 1.</td></tr>
+                  <tr id=T><td><a href="text.bump.html">TEXT.BUMP</a></td><td>Trả về tất cả danh sách chuỗi xuất hiện phía sau ký tự chỉ định.</td></tr>
                   <tr id=T><td><a href="text.compare.html">TEXT.COMPARE</a></td><td>Chuyển một chuỗi alphanum về dạng binary.</td></tr>
                   <tr id=T><td><a href="text.date.html">TEXT.DATE</a></td><td>Trả về ngày tháng xuất hiện trong chuỗi. (theo định dạng chỉ định)</td></tr>
                   <tr id=T><td><a href="text.datetime.html">TEXT.DATETIME</a></td><td>Trả về ngày tháng xuất hiện trong chuỗi. (theo định dạng chỉ định)</td></tr>
