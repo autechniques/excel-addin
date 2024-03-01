@@ -15,15 +15,17 @@
 
     <p>
     <div>● Thiếp lập cơ chế Lọc động [Dynamic] hoặc lọc tĩnh [Static] dữ liệu dựa trên hộp tìm kiếm [Search box].</div>
-    <div>● Để bật/tắt bộ lọc, sử dụng phím tắt {Ctrl + Shift + L}.</div>
+    <div>● Để bật/tắt vùng lọc, sử dụng phím tắt {Ctrl + Shift + L}.</div>
     </p>
 
     <p>
         <hr style="height:1px;border-width:0;color:lightgray;background-color:lightgray">
     </p>
     <blockquote>
-        <p>&nbsp;Điểm khác biệt của tính năng này là quá trình lọc không phụ thuộc phạm vi dữ liệu hoặc kiểu phạm vi.</p>
-        <p>&nbsp;Có thể tiến hành lọc trên mọi files, mọi sheets, mọi vị trí mà không cần thiết lập miễn là có bộ lọc được áp dụng trên vùng chọn.</p>
+        <p>&nbsp;Điểm khác biệt của tính năng này là quá trình lọc không phụ thuộc phạm vi dữ liệu hoặc kiểu phạm vi.
+        </p>
+        <p>&nbsp;Có thể tiến hành lọc trên mọi files, mọi sheets, mọi vị trí mà không cần thiết lập miễn tồn tại bộ lọc
+            được áp dụng trên vùng chọn.</p>
     </blockquote>
     <img src="gif/r.datafilter.png">
 
@@ -36,7 +38,8 @@
 
     <blockquote>
         <p>&nbsp;VD2: lọc cột B theo 2 giá trị France và Great Britain.</p>
-        <p>&nbsp;Để lọc theo nhiều điều kiện, hãy sử dụng các toán tử so sánh và từ khóa And/Or vd: ("&gt;25 and &lt;30") hoặc ("&lt;25 or &gt;30").</p>
+        <p>&nbsp;Để lọc theo nhiều điều kiện, hãy sử dụng các toán tử so sánh và từ khóa And/Or vd: ("&gt;25 and
+            &lt;30") hoặc ("&lt;25 or &gt;30").</p>
     </blockquote>
 
     <img src="gif/r.datafilter.compare.png">
@@ -45,37 +48,55 @@
         <p>&nbsp;VD3: lọc tuổi trên cột C từ 26 đến 29.</p>
     </blockquote>
     <!-- https://www.geeksforgeeks.org/how-to-display-html-tags-as-plain-text-in-html/ -->
-    <note>
-        <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
-            <path
-                d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">
-            </path>
-        </svg>
-        <font style="vertical-align: inherit;">Lưu ý:</font>
-    </note>
-
+    <p tabindex="-1" dir="auto">
+        <note>
+            <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                aria-hidden="true">
+                <path
+                    d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">
+                </path>
+            </svg>
+            <font style="vertical-align: inherit;">Lưu ý:</font>
+        </note>
+    </p>
     <blockquote>
         <p>&nbsp;1. Bật chế độ lọc trước khi lọc (nhận biết bằng mũi tên lọc).</p>
         <p>&nbsp;2. Chọn ô trong phạm vi cột cần lọc.</p>
         <p>&nbsp;3. Gõ [Enter] để xác nhận từ khóa lọc.</p>
         <p>&nbsp;Video demo <a href="https://youtu.be/Sj-EjhrWh9g?si=XdzeP0l5rZeCHBM2"
-            style="color: #ea0606;text-decoration:underline"">[Static Filter]</a>.</p>
-        <p>&nbsp;Video demo <a href="https://youtu.be/evwDF-F_R9k?si=cFZVaCZxu_-JdPz7"
-            style="color: #ea0606;text-decoration:underline"">[Dynamic Filter]</a>.</p>
+                style="color: #ea0606;text-decoration:underline"">[Static Filter]</a>.</p>
     </blockquote>
 
+    <p tabindex="-1" dir="auto">
+        <note>
+            <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                aria-hidden="true">
+                <path
+                    d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">
+                </path>
+            </svg>
+            <font style="vertical-align: inherit;">Đối với Dynamic Filter</font>
+        </note>
+    </p>
+    <img src="gif/r.dynamicfilter.png">
+    
+    <blockquote>
+        <p>&nbsp;Cách lọc tương tự, bạn đọc có thể di chuyển phạm vi cột bằng phím mũi tên trái, phải, lên, xuống trong quá trình lọc.</p>
+        <p>&nbsp;Video demo <a href=" https://youtu.be/evwDF-F_R9k?si=cFZVaCZxu_-JdPz7"
+                style="color: #ea0606;text-decoration:underline"">[Dynamic Filter]</a>.</p>
+    </blockquote>
     <p><strong>Related function</strong></p>
     <p>
-        <a href="datetowords.html">DATETOWORDS</a>
-        &nbsp;&nbsp;&nbsp;Hàm đọc ngày thành chữ (phiên bản tiếng việt).
-    </p>
+        <a href=" datetowords.html">DATETOWORDS</a>
+            &nbsp;&nbsp;&nbsp;Hàm đọc ngày thành chữ (phiên bản tiếng việt).
+        </p>
 
-    <p>
-        <a href="r.changecase.html">CHANGE CASE (feature)</a>
-        &nbsp;&nbsp;&nbsp; Tính năng thay đổi kiểu chữ hoa, chữ thường.
-    </p>
+        <p>
+            <a href="r.changecase.html">CHANGE CASE (feature)</a>
+            &nbsp;&nbsp;&nbsp; Tính năng thay đổi kiểu chữ hoa, chữ thường.
+        </p>
 
-    <p>Return to <a href="index.ribbon.html">Home</a></p>
+        <p>Return to <a href="index.ribbon.html">Home</a></p>
 
 
 
