@@ -1,0 +1,77 @@
+<!-- 900*360 -->
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>BATCH PRINT</title>
+  <link rel="stylesheet" type="text/css" href="function/code-inner.css">
+  <link rel="stylesheet" type="text/css" href="function/macros.css">
+</head>
+
+<body>
+  <h1>Batch Print feature
+    <a href="interface.html"><button class="button button4" style="float: right;"><b>Download</b></button></a>
+  </h1>
+
+  <p>
+  <div>● Sử dụng để in ấn hàng loạt một hoặc nhiều sheets trong cùng một file (mở hoặc đóng).</div>
+  </p>
+  <p>
+    <hr style="height:1px;border-width:0;color:lightgray;background-color:lightgray">
+  </p>
+
+  <img src="gif/r.batchprint.png">
+
+  <p tabindex="-1" dir="auto">
+    <note>
+       <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+          aria-hidden="true">
+          <path
+             d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">
+          </path>
+       </svg>
+       <font style="vertical-align: inherit;">Các thành phần:</font>
+    </note>
+ </p>
+
+  <blockquote>
+    <p>&nbsp;1. Chọn máy in (PDF,..).</p>
+    <p>&nbsp;2. Chọn in từ vị trí trang [from] đến trang [to] trong mỗi sheet.</p>
+    <p>&nbsp;3. Nếu xuất pdf, bạn cần đặt tên mẫu file xuất.</p>
+    <p>&nbsp;4.1 Chọn kiểu in (vd: in theo vùng đã chọn, in theo vùng [A1:F100], in toàn bộ sheet, in biểu đồ.. ).</p>
+    <p>&nbsp;4.2 Có thể chọn từ file đóng.</p>
+    <p>&nbsp;5. Chọn kích thước khổ giấy (A3, A4,..).</p>
+    <p>&nbsp;6. Chọn danh sách sheet được in (mặc định in tất cả).</p>
+    <p>&nbsp;7. Chọn tỉ lệ zoom khi in (mặc định zoom=100).</p>
+    <p>&nbsp;8. Tùy chỉnh đường phân trang (thường nên chỉnh thủ công).</p>
+    <p>&nbsp;9. Thiết lập đặt dọc hay ngang khổ giấy (mặc định đặt dọc).</p>
+    <p>&nbsp;a. Tiến hành in (Điều kiện là đã thiết lập máy in, kiểu in, khổ giấy,.. xong).</p>
+    <p>&nbsp;b. Số lượng cần in.</p>
+    <p>&nbsp;c. Vị trí trang bắt đầu in của mỗi sheet. (Mặc định trang đầu tiên).</p>
+    <p>&nbsp;d. Trường hợp in theo vùng chỉ định, đặt phạm vi vùng in cho mỗi sheet (vd A1:F100).</p>
+    <p>&nbsp;d. Trường hợp in theo vùng đã chọn, click từng sheet và kéo chọn dải ô bạn muốn in thủ công.</p>
+    <p>&nbsp;d. Trường hợp in toàn bộ sheet, dữ liệu sẽ được tính tự động.</p>
+    <p>&nbsp;e. Địa chỉ hàng tiêu đề. (thường một hoặc hai dòng, nếu chỉ định các tiêu đề sẽ lặp lại trên mỗi trang in) .</p>
+    <p>&nbsp;f. Quy cách sắp xếp các bộ sẽ được in: 1,2,3,1,2,3 hoặc 1,1,1,2,2,2 (khi số lượng copy>1) .</p>
+    <p>&nbsp;g. Chỉ định giá trị zoom (dùng khi đặt custom scale).</p>
+    <p>&nbsp;h. Tùy chỉnh khung nhìn (không ảnh hưởng đến thiết lập in).</p>
+    <p>&nbsp;i. Xem thử kết quả được in.</p>
+    <p>&nbsp;10. Các thiết lập bổ trợ (vd: căn lề, header, footer, chữ ký..).</p>
+  </blockquote>
+
+  <p><strong>Related function</strong></p>
+
+  <p>
+    <a href=" sql.html">SQL</a>&nbsp;&nbsp;&nbsp;Truy vấn bảng dữ liệu cố định dựa vào câu lệnh SQL.
+    </p>
+    <p>
+      <a href="xquery.html">XQUERY</a>&nbsp;&nbsp;&nbsp;Truy vấn dữ liệu giữa nhiều bảng dựa vào câu lệnh SQL.
+    </p>
+    <p>
+      <a href="pivot.html">PIVOT</a>&nbsp;&nbsp;&nbsp;Tương tự chức năng PIVOT trong Power Query.
+    </p>
+    <p>Return to <a href="index.function.html">Home</a></p>
+
+</body>
+
+</html>
