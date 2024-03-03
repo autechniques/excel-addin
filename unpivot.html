@@ -49,12 +49,14 @@
   </p>
 
   <img src="gif/unpivot.lv4header.png">
-  
+
   <blockquote>
     <p>&nbsp;Sử dụng các hàm thao tác mảng: HSTACK, CHOOSECOLS, SPLITX để tạo dữ liệu như yêu cầu.</p>
   </blockquote>
 
   <img src="gif/unpivot.lv4result.png">
+
+  <code class="language-xls" style="word-spacing: -3px;"><span class="token operator">=</span><a class="token function" href="">LET</a><span class="token punctuation">(</span><span class="token define name">DATA</span><span class="token punctuation">,</span><a class="token function" href="">DROP</a><span class="token punctuation">(</span><a class="token function" href="/unpivot">UNPIVOT.\AU</a><span class="token punctuation">(</span><span class="token range selector">A4:Z58</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token string">"group"</span><span class="token punctuation">,</span><span class="token string">"title"</span><span class="token punctuation">,</span><span class="token string">"value"</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span><a class="token function" href="">HSTACK</a><span class="token punctuation">(</span><a class="token function" href="">CHOOSECOLS</a><span class="token punctuation">(</span><span class="token define name">DATA</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span><a class="token function" href="/splitx">SPLITX.\AU</a><span class="token punctuation">(</span><a class="token function" href="">CHOOSECOLS</a><span class="token punctuation">(</span><span class="token define name">DATA</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token string">"-"</span><span class="token punctuation">)</span><span class="token punctuation">,</span><a class="token function" href="">CHOOSECOLS</a><span class="token punctuation">(</span><span class="token define name">DATA</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code>
 
   <code class="language-xls"
     style="word-spacing: -3px;"><span class="token operator">=</span><a class="token function" href="/sql.html">SQL.AU</a><span class="token punctuation">(</span><span class="token range selector">A1:D4</span><span class="token punctuation">,</span><span class="token string">"SELECT * FROM TABLE AS P UNPIVOT (VALUE FOR NAME IN ([ADAM],[ALICE])) AS T"</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span></code>
