@@ -42,7 +42,7 @@
   <img src="gif/sql.pivot.png">
 
   <blockquote>
-    <p>&nbsp;VD5: Nhóm các tiêu chí tại cột B theo nhóm cột C.</p>
+    <p>&nbsp;VD5: Nhóm các chỉ mục tại cột B theo nhóm cột C.</p>
   </blockquote>
   <img src="gif/sql.groupconcat.png">
 
@@ -61,8 +61,8 @@
   </blockquote>
   <img src="gif/sql.mostsequence.png">
 
-  <code class="language-xls" style="word-spacing: -3px;"><span class="token operator">=</span><a class="token function" href="/sql">SQL.AU</a><span class="token punctuation">(</span><span class="token range selector">A2:A27</span><span class="token punctuation">,</span><span class="token string">"SELECT V, COUNT(V) FROM (SELECT TRIM(VALUE) AS V FROM TABLE CROSS APPLY SPLIT.C(A,',')) AS T GROUP BY V"</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span></code>
-  
+  <!-- <code class="language-xls" style="word-spacing: -3px;"><span class="token operator">=</span><a class="token function" href="/sql">SQL.AU</a><span class="token punctuation">(</span><span class="token range selector">A2:A27</span><span class="token punctuation">,</span><span class="token string">"SELECT V, COUNT(V) FROM (SELECT TRIM(VALUE) AS V FROM TABLE CROSS APPLY SPLIT.C(A,',')) AS T GROUP BY V"</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span></code> -->
+  <code class="language-xls" style="word-spacing: -3px;"><span class="token operator">=</span><a class="token function" href="/sql">SQL.AU</a><span class="token punctuation">(</span><span class="token range selector">A1:A28</span><span class="token punctuation">,</span><span class="token string">"SELECT T.ITEM,COUNT(T.ITEM) AS V FROM TABLE.COLUMNS(A).SPLIT(', ') AS T GROUP BY ITEM"</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span></code>
   <p tabindex="-1" dir="auto">
     <note>
        <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
