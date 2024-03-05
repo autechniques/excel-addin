@@ -321,7 +321,7 @@
                         | =ROWS(columns).ORDERBY(col1, [order], col2, [order2],..).FROM([pre_num], [next_num]).LAST(expr)   
                         | =ROWS(columns).ORDERBY(col1, [order], col2, [order2],..).LASTR(expr)                                              
                         | =ROWS(columns).ORDERBY(col1, [order], col2, [order2],..).FROM([pre_num], [next_num]).LASTR(expr)   
-  COLUMNS.SPLIT         | =COLUMNS(column).SPLIT(delimiter)
+  COLUMNS.SPLIT         | =TABLE.COLUMNS(column).SPLIT(delimiter)
   IFS                   | =IFS(expr1, result1, expr2, result2,..)
   SWITCH                | =SWITCH(expr, val1, result1, val2, result2,..)
 </blockquote>
