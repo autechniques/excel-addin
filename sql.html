@@ -61,6 +61,13 @@
   </blockquote>
   <img src="gif/sql.mostsequence.png">
 
+  <blockquote>
+    <p>&nbsp;VD9: Thống kê TOP 5 tổng lớn nhất.</p>
+  </blockquote>
+  <img src="gif/sql.topn.png">
+
+  <code class="language-xls" style="word-spacing: -3px;"><span class="token operator">=</span><a class="token function" href="/sql">SQL.AU</a><span class="token punctuation">(</span><span class="token range selector">A2:C30</span><span class="token punctuation">,</span><span class="token string">"SELECT TOP 5 A,B,SUM(C) AS D FROM TABLE GROUP BY A,B ORDER BY D DESC"</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span></code>
+  
   <!-- <code class="language-xls" style="word-spacing: -3px;"><span class="token operator">=</span><a class="token function" href="/sql">SQL.AU</a><span class="token punctuation">(</span><span class="token range selector">A2:A27</span><span class="token punctuation">,</span><span class="token string">"SELECT V, COUNT(V) FROM (SELECT TRIM(VALUE) AS V FROM TABLE CROSS APPLY SPLIT.C(A,',')) AS T GROUP BY V"</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span></code> -->
   <code class="language-xls" style="word-spacing: -3px;"><span class="token operator">=</span><a class="token function" href="/sql">SQL.AU</a><span class="token punctuation">(</span><span class="token range selector">A1:A28</span><span class="token punctuation">,</span><span class="token string">"SELECT T.ITEM,COUNT(T.ITEM) AS V FROM TABLE.COLUMNS(A).SPLIT(', ') AS T GROUP BY ITEM"</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span></code>
   <p tabindex="-1" dir="auto">
