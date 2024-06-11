@@ -15,7 +15,7 @@
 
     <p>
     <div>● Chương trình trộn dữ liệu từ Excel sang Word nhanh chóng, đơn giản nhất và tốt nhất.</div>
-    <div>● Cập nhật bài viết 16/05/2024</div>
+    <div>● Cập nhật bài viết 11/06/2024</div>
     </p>
 
     <p>
@@ -49,13 +49,13 @@
         </note>
      </p>
     <blockquote><!-- 
-        <p>&nbsp;   1.1 Mặc định các trường dữ liệu const (số, chuỗi, ngày tháng,..) không cần tiền tố (vd: tên, tuổi,..).</p>
-        <p>&nbsp;   1.2 Trường hợp trường dữ liệu const nằm trong control, đặt tên cột với tiền tố S_</p>
+        <p>&nbsp;   1 Mặc định các trường dữ liệu const (số, chuỗi, ngày tháng,..) không cần tiền tố (vd: thông tin tên, tuổi,..).</p>
+        <p>&nbsp;   1.1 Trường hợp trường dữ liệu const nằm trong control, đặt tên cột với tiền tố S_</p>
         <p>&nbsp;   2. Để trộn dữ liệu kèm Hypelink, đặt tên cột với tiền tố "H_"</p>
-        <p>&nbsp;   3.1 Để đính kèm hình ảnh cục bộ hoặc ảnh Web, đặt tên cột với tiền tố "I_"</p>
-        <p>&nbsp;   3.2 Trường hợp ảnh cục bộ, hậu tố là tên thư mục (vd: I_hocsinh, I_tên thư mục..), dữ liệu các dòng chỉ cần khai báo tên ảnh (vd: Logo.png,..)</p>
-        <p>&nbsp;   3.3 Trường hợp ảnh web, hậu tố là tên bất kỳ (vd: I_tenbatky), dữ liệu các dòng khai báo full URL.(vd: https://../weeping.gif).</p>
-        <p>&nbsp;   4.1 Để trộn dữ liệu là bảng (Table) từ các file Word, đặt tên cột có dạng T_{}k với tiền tố "T_", hậu tố có định dạng {}k.</p>
+        <p>&nbsp;   3. Để đính kèm hình ảnh cục bộ hoặc hình ảnh Web, đặt tên cột với tiền tố "I_"</p>
+        <p>&nbsp;   3.1 Trường hợp ảnh cục bộ, hậu tố là tên thư mục (vd: I_hocsinh, I_tên thư mục..), dữ liệu các dòng chỉ cần khai báo tên ảnh (vd: Logo.png,..)</p>
+        <p>&nbsp;   3.2 Trường hợp ảnh web, hậu tố là tên bất kỳ (vd: I_tenbatky), dữ liệu các dòng khai báo full URL.(vd: https://../weeping.gif).</p>
+        <p>&nbsp;   4. Để trộn dữ liệu là bảng (Table) từ các file Word, đặt tên cột có dạng T_{}k với tiền tố "T_", hậu tố có định dạng {}k.</p>
         <p>&nbsp;   4.1      {} là tên tùy ý(có thể trống), k là vị trí bảng.</p>
         <p>&nbsp;   4.1      ví dụ: T_2, T_X2,.. sẽ trộn bảng 2 hoặc T_vd1 sẽ trộn bảng 1, T_zz3 sẽ trộn bảng 3 trong word.</p>
         <p>&nbsp;   4.2 Để trộn dữ liệu là bảng (Table) từ các file Excel, đặt tên cột với tiền tố "T_" và hậu tố là tên NameRange/Table của bảng.</p>
@@ -63,11 +63,11 @@
         <p>&nbsp;   4.3 Mặc định chiều rộng cột (Table) được giữ nguyên, để tự động autofit cột tích mục [1] Settings.</p> 
         <p>&nbsp;   4.4 Mặc định bảng chỉ sử dụng một tiêu đề, để duy trì tiêu đề khi phân trang tích mục [2] Settings.</p> 
         <p>&nbsp;   5. Các hình ảnh có thể đặt trong thư mục bất kỳ, tuy nhiên cần thêm địa chỉ các thư mục này vào mục [Path].</p>
-        <p>&nbsp;   6. Đảm bảo các dữ liệu hợp lệ (ví dụ tên gmail, tên ảnh, web link, tên Table..) trước khi chạy chương trình.</p>
+        <p>&nbsp;   6. Hãy đảm bảo các dữ liệu MailMerge là hợp lệ (ví dụ tên gmail, tên ảnh, web link, tên Table..) trước khi chạy chương trình.</p>
         <p>&nbsp;   7.1 Để đính kèm ảnh trực tiếp vào File, tích chọn mục [3] Settings, sau đó bạn có thể gửi file trực tiếp cho người nhận.</p>
-        <p>&nbsp;   7.2 Nếu không đính kèm, bạn cần gửi file và cả thư mục ảnh đính kèm cho người nhận.</p>
-        <p>&nbsp;   8.1 Để tự động rút gọn đoạn fields trống, khai báo giá trị {x}.</p>
-        <p>&nbsp;   8.2 Để làm rỗng đoạn fields trống (nhưng không rút gọn), khai báo giá trị {}.</p>
+        <p>&nbsp;   7.2 Nếu không đính kèm trực tiếp, bạn cần gửi file và cả thư mục ảnh đính kèm cho người nhận.</p>
+        <p>&nbsp;   8.1 Để tự động rút gọn đoạn fields trống (xóa Field), khai báo giá trị {x}.</p>
+        <p>&nbsp;   8.2 Để làm rỗng đoạn fields trống (nhưng không xóa Field), khai báo giá trị {}.</p>
         <p>&nbsp;   9. Mặc định, mỗi hàng xuất ra một file, để nối tất cả các file với nhau, tích chọn mục [4] Settings.</p>
         <p>&nbsp;   10. Mặc định, tất cả các hàng được xuất, nếu muốn xuất trên một vùng nhất định nhập vị trí dòng [From] to [To].</p> -->
         <img src="gif/r.mailmerge.note.png">
@@ -102,7 +102,7 @@
      </p>
      <blockquote>
         <p>&nbsp;1. Các cột (field) không được trùng lặp tên.</p>
-        <p>&nbsp;2. Cột cuối cùng được sử dụng để đặt tên File Word được xuất (Tên file không chứa extension).</p>
+        <p>&nbsp;2. Cột dữ liệu cuối cùng trên Excel được sử dụng để đặt tên File Word được xuất (Tên file không chứa extension).</p>
         <p>&nbsp;2. Khi trộn bảng từ Excel hoặc Word, các tên bảng [Name] trên Excel và [Field] được chèn trong Word phải khớp nhau.</p>
        </blockquote>
 
