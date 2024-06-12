@@ -68,8 +68,10 @@
         <p>&nbsp;   7.2 Nếu không đính kèm trực tiếp, bạn cần gửi file và cả thư mục ảnh đính kèm cho người nhận.</p>
         <p>&nbsp;   8.1 Để tự động rút gọn đoạn fields trống (xóa Field), khai báo giá trị {x}.</p>
         <p>&nbsp;   8.2 Để làm rỗng đoạn fields trống (không xóa Field), khai báo giá trị {}.</p>
-        <p>&nbsp;   9.1 Để xóa hoặc thay thế (Replace) một chuỗi nhất định, đặt tên cột tiền tố là "R_", hậu tố bất kỳ và khai báo giá trị cần xóa (cách nhau bởi newline)</p>
-        <p>&nbsp;   9.2 Để xóa đoạn văn bản (Delete) chứa chuỗi nhất định, đặt tên cột tiền tố là "D_", hậu tố bất kỳ và khai báo giá trị cần xóa (cách nhau bởi newline)</p>
+        <p>&nbsp;   9.1 Để khai báo trường phụ thay thế, đặt tên cột tiền tố là "R_" (Replace), hậu tố bất kỳ.</p>
+        <p>&nbsp;       Khai báo giá trị tham số (cách nhau bởi newline)</p>
+        <p>&nbsp;   9.2 Để khai báo trường phụ xóa đoạn văn bản chứa chuỗi, đặt tên cột tiền tố là "D_" (Delete), hậu tố bất kỳ.</p>
+        <p>&nbsp;       Khai báo giá trị cần xóa (cách nhau bởi newline)</p>
         <p>&nbsp;   10. Mặc định, mỗi hàng xuất ra một file, để nối tất cả các file với nhau, tích chọn mục [4] Settings.</p>
         <p>&nbsp;   11. Mặc định, tất cả các hàng được xuất, nếu muốn xuất trên một vùng nhất định nhập vị trí dòng [From] to [To].</p> -->
         <img src="gif/r.mailmerge.note.png">
@@ -82,7 +84,7 @@
                      d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">
                   </path>
                </svg>
-               <font style="vertical-align: inherit;">Quản lý các miền phụ:</font>
+               <font style="vertical-align: inherit;">Quản lý các trường phụ:</font>
             </note>
          </p>
          <blockquote>
@@ -107,8 +109,9 @@
          <blockquote>
             <p>&nbsp;1. Dễ theo dõi, dễ quản lý trường dữ liệu đầu vào trên Excel.</p>
             <p>&nbsp;2. Có thể khai báo số lượng tùy ý và chủ động trong tính toán (Nó có thể gán cho mọi giá trị văn bản trực tiếp).</p>
+            <p>&nbsp;3. Có thể khai báo trường phụ thay thế hoàn toàn trường chính nhưng chỉ với const_fields.</p>
             <p>&nbsp;3. Không giống với Fields chính, các tham số phụ phải điền tay (do đó nên đặt tên ngắn gọn vd: ?1=, !a1=, ^h1=..).</p>
-            <p>&nbsp;4. Bởi nhiều thông tin trường phụ có thể được gộp chung vào một ô nên sẽ khó liên kết với các giá trị qua công thức hơn.</p>
+            <p>&nbsp;4. Bởi nhiều thông tin trường phụ có thể được gộp chung vào một ô nên sẽ khó liên kết với các giá trị qua công thức.</p>
             <p>&nbsp;5. Các trường phụ được hỗ trợ option tìm kiếm Replace rộng rãi và hiệu quả hơn hơn trường chính (xem Settings mục 5,6,7).</p>
          </blockquote>
 
