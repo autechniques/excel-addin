@@ -48,6 +48,15 @@
     </blockquote>
     <img src="gif/xgroup-counta.gif">
 
+    <blockquote>
+        <p>&nbsp;VD4: Tính toán số lượng nguyên liệu tồn kho với XGROUP.</p>
+        <p>&nbsp;Bài toán này có cùng kết quả khi sử dụng hàm <a href="query.html"
+            style="color:#ea0606;text-decoration:underline">QUERY</a>.</p>
+        <p>&nbsp;Để hiểu tại sao sử dụng SUM(PRODUCT(C3,C4)) bạn đọc xem ví dụ mẫu /Query - Tồnkho.xlsx(Dropbox)</p>
+    </blockquote>
+    <img src="gif/xgroup-tonkho.png">
+    <code class="language-xls" style="word-spacing: -3px;"><span class="token operator">=</span><a class="token function" href="/xgroup">XGROUP.\AU</a><span class="token punctuation">(</span><a class="token function" href="https://exceljet.net/functions/drop-function">DROP</a><span class="token punctuation">(</span><a class="token function" href="/leftjoin">LEFTJOIN.\AU</a><span class="token punctuation">(</span><a class="token function" href="/unpivot">UNPIVOT.\AU</a><span class="token punctuation">(</span><span class="token range selector">A1:E5</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token string">"N"</span><span class="token punctuation">,</span><span class="token string">"D"</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token range selector">A9:B14</span><span class="token punctuation">,</span><span class="token brace">{</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token brace">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token string">"SUM(PRODUCT(C3,C4))"</span><span class="token punctuation">)</span></code>
+
     <p tabindex="-1" dir="auto">
         <note>
            <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
