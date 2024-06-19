@@ -1,0 +1,97 @@
+<!-- 900*360 -->
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>XQUERY</title>
+  <link rel="stylesheet" type="text/css" href="function/code-inner.css">
+  <link rel="stylesheet" type="text/css" href="function/macros.css">
+</head>
+
+<body>
+  <h1>XQUERY function
+     <a href="interface.html"><button class="button button4" style="float: right;"><b>Download</b></button></a>
+  </h1>
+
+  <p>
+  <div>● Truy vấn các bảng dữ liệu tĩnh SQLite Database.</div>
+  <div>● Để sử dụng hàm này các bảng dữ liệu cần truy vấn phải được tạo trước trong CSDL của bạn hoặc của AUExpress Tools.</div>
+  <div>● Nếu sử dụng CSDL của bạn thì hãy sử dụng tính năng XSQL để kết nối với SQLite Database thông qua Database-ID.</div>
+  </p>
+  <p>
+    <hr style="height:1px;border-width:0;color:lightgray;background-color:lightgray">
+  </p>
+
+  <blockquote>
+    <p>&nbsp;Dưới đây là ví dụ truy vấn CSDL từ AUExpress Tools (chỉ tồn tại trong mỗi phiên Excel).</p>
+    <p>&nbsp;Bước 1: Thiết lập tên phạm vi</p>
+  </blockquote>
+
+  <img src="gif/xquery-define.gif">
+  <p>
+    <hr style="height:1px;border-width:0;color:lightgray;background-color:lightgray">
+  </p>
+ <blockquote>
+    <p>&nbsp;Bước 2: Tạo bộ dữ liệu thông qua tính năng XQUERY (Ribbon)</p>
+  </blockquote>
+  <img src="gif/xquery-create.gif">
+
+  <blockquote>
+    <p>&nbsp;Bước 3: Tiến hành truy vấn bảng</p>
+  </blockquote>
+  <img src="gif/xquery-leftjoin.png">
+  <code class="language-xls" style="word-spacing: -3px;"><span class="token operator">=</span><span class="token define name">QUERY.AU</span><span class="token punctuation">(</span><span class="token range selector">A9:B14</span><span class="token punctuation">,</span><span class="token string">"SELECT NGUYEN_LIEU,SUM(TOTAL) AS SUM FROM (SELECT TEN_SET,NGUYEN_LIEU, DON_VI*SO_LUONG AS Total FROM (SELECT * FROM TB_DINHMUC LEFT JOIN TABLE ON TB_DINHMUC.TEN_SET = TABLE.TEN_SET)) GROUP BY NGUYEN_LIEU"</span><span class="token punctuation">)</span></code>
+  
+  <p tabindex="-1" dir="auto">
+    <note>
+       <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+          aria-hidden="true">
+          <path
+             d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">
+          </path>
+       </svg>
+       <font style="vertical-align: inherit;">Chú ý:</font>
+    </note>
+ </p>
+  <blockquote>
+    <p>&nbsp;Phân biệt giữa các hàm: QUERY (hàm truy vấn động SQLite), XQUERY (hàm truy vấn tĩnh SQLite)</p>
+    <p>&nbsp;Phân biệt giữa các hàm: SQL (hàm truy vấn động CSDL được hỗ trợ), XSQL(hàm truy vấn tĩnh CSDL được hỗ trợ)</p>
+    <p>&nbsp;Phân biệt tính năng XQUERY-Ribbon (dùng để tạo và quản lý các bảng CSDL SQLite của AUExpress_Tools)</p>
+    <p>&nbsp;Phân biệt tính năng XSQL-Ribbon (dùng để thiết lập kết nối tới các CSDL: SQLServer, SQLite, MySQL..)</p>
+    <p>&nbsp;Trong ví dụ trên, để có thể thực hiện truy vấn qua hàm XQUERY, chúng tôi đã sử dụng tính năng XQUERY để tạo bảng dữ liệu riêng.</p>
+    <p>&nbsp;Các bảng dữ liệu riêng của AUExpress-Tools được kết nối tự động do đó hàm XQUERY không cần tới Database-ID.</p>
+    <p>&nbsp;Nếu bạn có CSDL và tạo bảng dữ liệu từ trước, bạn không dùng tới XQUERY để tạo mà sử dụng XSQL để kết nối tới Database của bạn qua Database-ID.</p>
+    <p>&nbsp;Cuối cùng sử dụng hàm XQUERY + database-ID này để truy vấn.</p>
+  </blockquote>
+
+  <p>
+    <hr style="height:1px;border-width:0;color:lightgray;background-color:lightgray">
+  </p>
+
+  <p tabindex="-1" dir="auto">
+    <note>
+       <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+          aria-hidden="true">
+          <path
+             d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">
+          </path>
+       </svg>
+       <font style="vertical-align: inherit;">Support functions:</font>
+    </note>
+ </p>
+ <blockquote>
+    <p>&nbsp;Xem hàm <a href="query.html" style="color:#ea0606;text-decoration:underline">QUERY</a></p>
+</blockquote>
+  <p><strong>Related function</strong></p>
+
+  <p>
+    <a href="query.html">QUERY</a>&nbsp;&nbsp;&nbsp;Truy vấn dữ liệu động SQLite Database.
+  </p>
+  <p>
+    <a href="pivot.html">PIVOT</a>&nbsp;&nbsp;&nbsp;Tương tự chức năng PIVOT trong Power Query.
+  </p>
+  <p>Return to <a href="index.function.html">Home</a></p>
+
+</body>
+
+</html>
