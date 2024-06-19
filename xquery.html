@@ -40,7 +40,10 @@
     <p>&nbsp;Bước 3: Tiến hành truy vấn bảng</p>
   </blockquote>
   <img src="gif/xquery-leftjoin.png">
-  <code class="language-xls" style="word-spacing: -3px;"><span class="token operator">=</span><span class="token define name">QUERY.AU</span><span class="token punctuation">(</span><span class="token range selector">A9:B14</span><span class="token punctuation">,</span><span class="token string">"SELECT NGUYEN_LIEU,SUM(TOTAL) AS SUM FROM (SELECT TEN_SET,NGUYEN_LIEU, DON_VI*SO_LUONG AS Total FROM (SELECT * FROM TB_DINHMUC LEFT JOIN TABLE ON TB_DINHMUC.TEN_SET = TABLE.TEN_SET)) GROUP BY NGUYEN_LIEU"</span><span class="token punctuation">)</span></code>
+  <code class="language-xls" style="word-spacing: -3px;"><span class="token operator">=</span><a class="token function" href="/xquery">XQUERY.AU</a><span class="token punctuation">(</span><span class="token string">"SELECT NGUYEN_LIEU,SUM(TOTAL) AS SUM FROM 
+    (SELECT TEN_SET,NGUYEN_LIEU, DON_VI*SO_LUONG AS Total FROM 
+    (SELECT * FROM TB_DINHMUC LEFT JOIN TB_XUAT ON TB_DINHMUC.TEN_SET = TB_XUAT.TEN_SET)
+    )GROUP BY NGUYEN_LIEU"</span><span class="token punctuation">)</span></code>
   
   <p tabindex="-1" dir="auto">
     <note>
